@@ -1,0 +1,1150 @@
+<!doctype html>
+<html lang="pt-PT">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#eef8ff" />
+    <meta
+      name="description"
+      content="Paula Peres Di Salvatore — Psicologia Clínica, Psicoterapia e Supervisão Clínica em Lisboa."
+    />
+    <title>Paula Peres Di Salvatore | Psicologia Clínica & Psicoterapia</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./IMG-20260814-WA0000.jpg"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./IMG-20260814-WA0000.jpg"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ["DM Sans", "sans-serif"],
+              display: ["Manrope", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      :root {
+        --ink: #15304a;
+        --muted: #5d7287;
+        --blue: #1597d5;
+        --blue-2: #45c8ee;
+        --violet: #7467ee;
+        --aqua: #9de9e1;
+        --pink: #ffb6d9;
+        --lavender: #e8e5ff;
+        --sky: #eaf8ff;
+        --mint: #e9fffa;
+        --paper: #ffffff;
+        --line: rgba(21, 48, 74, 0.09);
+        --shadow: 0 22px 70px rgba(49, 117, 156, 0.13);
+        --shadow-sm: 0 10px 34px rgba(49, 117, 156, 0.1);
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        margin: 0;
+        background: var(--sky);
+        color: var(--ink);
+        font-family: "DM Sans", sans-serif;
+        overflow-x: hidden;
+      }
+      ::selection {
+        background: var(--aqua);
+        color: var(--ink);
+      }
+      .display {
+        font-family: "Manrope", sans-serif;
+      }
+      .hero-bg {
+        background:
+          radial-gradient(
+            circle at 10% 18%,
+            rgba(157, 233, 225, 0.58),
+            transparent 27%
+          ),
+          radial-gradient(
+            circle at 82% 12%,
+            rgba(232, 229, 255, 0.92),
+            transparent 30%
+          ),
+          linear-gradient(135deg, #f8fdff 0%, #eefaff 48%, #f8f4ff 100%);
+      }
+      .section-soft {
+        background:
+          radial-gradient(
+            circle at 15% 50%,
+            rgba(69, 200, 238, 0.13),
+            transparent 24%
+          ),
+          radial-gradient(
+            circle at 88% 20%,
+            rgba(116, 103, 238, 0.1),
+            transparent 25%
+          ),
+          #f7fcff;
+      }
+      .nav-blur {
+        background: rgba(255, 255, 255, 0.78);
+        backdrop-filter: blur(18px);
+        -webkit-backdrop-filter: blur(18px);
+        border-bottom: 1px solid rgba(21, 48, 74, 0.07);
+      }
+      .nav-link {
+        color: rgba(21, 48, 74, 0.74);
+      }
+      .nav-link:hover {
+        color: var(--blue);
+      }
+      .btn-primary {
+        background: linear-gradient(135deg, #1597d5 0%, #4f7eef 100%);
+        box-shadow: 0 13px 30px rgba(59, 126, 222, 0.25);
+      }
+      .btn-primary:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 18px 38px rgba(59, 126, 222, 0.3);
+      }
+      .btn-secondary {
+        background: rgba(255, 255, 255, 0.78);
+        border: 1px solid rgba(21, 48, 74, 0.1);
+      }
+      .btn-secondary:hover {
+        border-color: rgba(21, 151, 213, 0.3);
+        background: #fff;
+        transform: translateY(-2px);
+      }
+      .eyebrow {
+        color: var(--blue);
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        font-size: 0.72rem;
+        font-weight: 800;
+      }
+      .rule {
+        width: 58px;
+        height: 5px;
+        border-radius: 999px;
+        background: linear-gradient(
+          90deg,
+          var(--blue),
+          var(--violet),
+          var(--pink)
+        );
+      }
+      .hero-title {
+        letter-spacing: -0.055em;
+        line-height: 0.96;
+      }
+      .gradient-text {
+        background: linear-gradient(
+          100deg,
+          #1597d5 5%,
+          #656df0 55%,
+          #dc62b4 100%
+        );
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+      }
+      .blob {
+        position: absolute;
+        border-radius: 999px;
+        filter: blur(6px);
+        pointer-events: none;
+        opacity: 0.72;
+      }
+      .portrait-frame {
+        border-radius: 2.2rem;
+        padding: 10px;
+        background: linear-gradient(
+          145deg,
+          rgba(255, 255, 255, 0.95),
+          rgba(233, 248, 255, 0.95)
+        );
+        border: 1px solid rgba(21, 151, 213, 0.12);
+        box-shadow: var(--shadow);
+      }
+      .portrait-image {
+        border-radius: 1.75rem;
+        width: 100%;
+        aspect-ratio: 4 / 5;
+        object-fit: cover;
+      }
+      .floating-tag {
+        background: rgba(255, 255, 255, 0.88);
+        border: 1px solid rgba(255, 255, 255, 0.85);
+        backdrop-filter: blur(14px);
+        -webkit-backdrop-filter: blur(14px);
+        box-shadow: var(--shadow-sm);
+      }
+      .mini-feature {
+        border: 1px solid var(--line);
+        background: rgba(255, 255, 255, 0.84);
+        box-shadow: var(--shadow-sm);
+      }
+      .soft-card {
+        border: 1px solid var(--line);
+        background: rgba(255, 255, 255, 0.9);
+        box-shadow: var(--shadow-sm);
+        transition:
+          transform 0.28s ease,
+          box-shadow 0.28s ease,
+          border-color 0.28s ease;
+      }
+      .soft-card:hover {
+        transform: translateY(-6px);
+        box-shadow: var(--shadow);
+        border-color: rgba(21, 151, 213, 0.18);
+      }
+      .journey-banner {
+        background:
+          radial-gradient(
+            circle at 8% 18%,
+            rgba(157, 233, 225, 0.45),
+            transparent 30%
+          ),
+          radial-gradient(
+            circle at 88% 70%,
+            rgba(255, 182, 217, 0.27),
+            transparent 25%
+          ),
+          linear-gradient(135deg, #173a5b 0%, #244e73 48%, #384f97 100%);
+        box-shadow: var(--shadow);
+      }
+      .approach-card {
+        background: linear-gradient(135deg, #ffffff 0%, #f1fbff 100%);
+      }
+      .quote-card {
+        background:
+          radial-gradient(
+            circle at 90% 20%,
+            rgba(255, 182, 217, 0.24),
+            transparent 22%
+          ),
+          radial-gradient(
+            circle at 10% 80%,
+            rgba(157, 233, 225, 0.34),
+            transparent 24%
+          ),
+          linear-gradient(135deg, #eefcff, #f5f1ff);
+        border: 1px solid rgba(21, 151, 213, 0.1);
+      }
+      .supervision {
+        background:
+          radial-gradient(
+            circle at 15% 10%,
+            rgba(69, 200, 238, 0.21),
+            transparent 24%
+          ),
+          radial-gradient(
+            circle at 85% 90%,
+            rgba(255, 182, 217, 0.19),
+            transparent 25%
+          ),
+          linear-gradient(145deg, #173a5b 0%, #2e4d88 53%, #5361aa 100%);
+      }
+      .dark-card {
+        background: rgba(255, 255, 255, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.16);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        transition:
+          transform 0.28s ease,
+          background 0.28s ease;
+      }
+      .dark-card:hover {
+        transform: translateY(-5px);
+        background: rgba(255, 255, 255, 0.15);
+      }
+      .contact-panel {
+        background:
+          radial-gradient(
+            circle at 0% 0%,
+            rgba(157, 233, 225, 0.32),
+            transparent 28%
+          ),
+          #ffffff;
+      }
+      .field {
+        background: #f4fbff;
+        border: 1px solid rgba(21, 48, 74, 0.1);
+      }
+      .field:focus {
+        border-color: rgba(21, 151, 213, 0.55);
+        box-shadow: 0 0 0 4px rgba(21, 151, 213, 0.1);
+      }
+      .whatsapp {
+        background: linear-gradient(145deg, #35d69a, #11b981);
+        box-shadow: 0 15px 34px rgba(17, 185, 129, 0.28);
+      }
+      .footer {
+        background: linear-gradient(145deg, #143550, #244c75);
+      }
+      .reveal {
+        opacity: 0;
+        transform: translateY(18px);
+        animation: reveal 0.8s ease forwards;
+      }
+      .delay-1 {
+        animation-delay: 0.08s;
+      }
+      .delay-2 {
+        animation-delay: 0.16s;
+      }
+      .delay-3 {
+        animation-delay: 0.24s;
+      }
+      @keyframes reveal {
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      @media (max-width: 767px) {
+        .hero-title {
+          letter-spacing: -0.04em;
+        }
+        .portrait-frame {
+          border-radius: 1.65rem;
+        }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        html {
+          scroll-behavior: auto;
+        }
+        .reveal {
+          animation: none;
+          opacity: 1;
+          transform: none;
+        }
+        .soft-card,
+        .dark-card,
+        .btn-primary,
+        .btn-secondary {
+          transition: none;
+        }
+      }
+    </style>
+  </head>
+  <body class="antialiased">
+    <header class="fixed inset-x-0 top-0 z-50">
+      <div class="nav-blur">
+        <div
+          class="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 sm:px-8"
+        >
+          <a
+            href="#inicio"
+            class="flex items-center gap-3"
+            aria-label="Paula Peres Di Salvatore"
+          >
+            <img
+              src="./IMG-20260814-WA0000-removebg-preview.png"
+              alt="Paula Peres Di Salvatore"
+              class="h-10 w-auto sm:h-11"
+            />
+            <span
+              class="hidden border-l border-slate-200 pl-3 text-[11px] font-bold uppercase tracking-[.16em] text-slate-600 sm:block"
+            >
+              Psicologia Clínica
+            </span>
+          </a>
+          <nav class="hidden items-center gap-7 text-sm font-semibold md:flex">
+            <a class="nav-link transition" href="#sobre">Sobre Paula</a>
+            <a class="nav-link transition" href="#abordagem">Abordagem</a>
+            <a class="nav-link transition" href="#supervisao">Supervisão</a>
+            <a
+              class="btn-primary rounded-full px-5 py-2.5 text-white transition"
+              href="#contactos"
+              >Contactos</a
+            >
+          </nav>
+          <button
+            id="mobile-menu-button"
+            class="rounded-full border border-slate-200 bg-white/90 px-4 py-2.5 text-xs font-bold uppercase tracking-[.12em] text-slate-700 md:hidden"
+            aria-label="Abrir menu"
+            aria-expanded="false"
+          >
+            Menu
+          </button>
+        </div>
+        <div
+          id="mobile-menu"
+          class="hidden border-t border-slate-200/80 bg-white/95 md:hidden"
+        >
+          <nav class="mx-auto max-w-7xl px-5 py-3">
+            <a
+              href="#sobre"
+              class="block border-b border-slate-100 py-3 text-sm font-semibold text-slate-700"
+              >Sobre Paula</a
+            >
+            <a
+              href="#abordagem"
+              class="block border-b border-slate-100 py-3 text-sm font-semibold text-slate-700"
+              >Abordagem</a
+            >
+            <a
+              href="#supervisao"
+              class="block border-b border-slate-100 py-3 text-sm font-semibold text-slate-700"
+              >Supervisão</a
+            >
+            <a
+              href="#contactos"
+              class="block py-3 text-sm font-semibold text-slate-700"
+              >Contactos</a
+            >
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main id="inicio">
+      <section class="hero-bg relative overflow-hidden">
+        <div class="blob left-[-130px] top-40 h-80 w-80 bg-[#b8f1e8]"></div>
+        <div class="blob right-[-110px] top-24 h-96 w-96 bg-[#dedaff]"></div>
+        <div
+          class="blob bottom-[-90px] left-[42%] h-64 w-64 bg-[#ffd4e8]"
+        ></div>
+        <div
+          class="relative mx-auto grid max-w-7xl items-center gap-12 px-5 pb-16 pt-32 sm:px-8 md:min-h-[820px] md:grid-cols-[1.04fr_.96fr] md:gap-16 md:pb-20 md:pt-36"
+        >
+          <div class="relative z-10 reveal">
+            <div
+              class="mb-6 inline-flex items-center gap-2 rounded-full border border-sky-200 bg-white/75 px-4 py-2 text-xs font-bold uppercase tracking-[.13em] text-sky-700 shadow-sm"
+            >
+              <span class="h-2 w-2 rounded-full bg-emerald-400"></span> Lisboa ·
+              Psicologia Clínica
+            </div>
+            <h1
+              class="display hero-title max-w-4xl text-[3.5rem] font-extrabold text-[var(--ink)] sm:text-[5.1rem] lg:text-[6.35rem]"
+            >
+              Paula Peres <span class="block gradient-text">Di Salvatore</span>
+            </h1>
+            <p
+              class="mt-7 max-w-xl text-lg leading-8 text-[var(--muted)] sm:text-xl"
+            >
+              Psicologia Clínica, Psicoterapia e Supervisão Clínica com uma
+              prática assente no rigor científico, na escuta e no humanismo.
+            </p>
+            <div class="mt-9 flex flex-col gap-3 sm:flex-row">
+              <a
+                href="#contactos"
+                class="btn-primary inline-flex items-center justify-center gap-2 rounded-full px-6 py-3.5 text-sm font-bold text-white"
+              >
+                Marcar contacto
+              </a>
+              <a
+                href="#sobre"
+                class="btn-secondary inline-flex items-center justify-center gap-2 rounded-full px-6 py-3.5 text-sm font-bold text-[var(--ink)] transition"
+              >
+                Conhecer a Paula
+              </a>
+            </div>
+            <div class="mt-11 grid gap-3 sm:grid-cols-2">
+              <div
+                class="mini-feature flex items-center gap-3 rounded-2xl p-3.5"
+              >
+                <div>
+                  <p class="text-sm font-bold text-[var(--ink)]">+20 anos</p>
+                  <p class="text-xs text-[var(--muted)]">
+                    de experiência clínica
+                  </p>
+                </div>
+              </div>
+              <div
+                class="mini-feature flex items-center gap-3 rounded-2xl p-3.5"
+              >
+                <div>
+                  <p class="text-sm font-bold text-[var(--ink)]">
+                    Psicóloga Supervisora
+                  </p>
+                  <p class="text-xs text-[var(--muted)]">
+                    individual e em grupo
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="relative flex justify-center md:justify-end reveal delay-2"
+          >
+            <div
+              class="absolute -left-8 top-10 hidden h-28 w-28 rounded-full border border-cyan-300/40 sm:block"
+            ></div>
+            <div
+              class="absolute -right-5 bottom-8 h-24 w-24 rounded-full bg-pink-200/40 blur-xl sm:h-36 sm:w-36"
+            ></div>
+            <div class="portrait-frame relative z-10 w-[min(88vw,500px)]">
+              <img
+                src="./PerfilFoto.jpg"
+                alt="Paula Peres Di Salvatore"
+                class="portrait-image"
+              />
+              <div
+                class="floating-tag absolute bottom-6 left-6 right-6 rounded-2xl p-4 sm:bottom-8 sm:left-8 sm:right-8"
+              >
+                <div class="flex items-center justify-between gap-4">
+                  <div>
+                    <p
+                      class="display text-xl font-extrabold text-[var(--ink)] sm:text-2xl"
+                    >
+                      Paula Peres Di Salvatore
+                    </p>
+                    <p class="mt-1 text-sm font-medium text-slate-500">
+                      Psicóloga · Lisboa
+                    </p>
+                  </div>
+                  <span
+                    class="hidden h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-cyan-100 to-violet-100 text-violet-600 sm:flex"
+                  >
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="relative z-10 border-t border-white/70 bg-white/62 backdrop-blur-md"
+        >
+          <div
+            class="mx-auto grid max-w-7xl gap-4 px-5 py-5 sm:px-8 md:grid-cols-3"
+          >
+            <div class="mini-feature flex items-center gap-3 rounded-2xl p-4">
+              <div>
+                <p class="font-bold text-[var(--ink)]">
+                  Escuta e relação terapêutica
+                </p>
+                <p class="text-sm text-[var(--muted)]">
+                  Um espaço de reflexão e compreensão.
+                </p>
+              </div>
+            </div>
+            <div class="mini-feature flex items-center gap-3 rounded-2xl p-4">
+              <div>
+                <p class="font-bold text-[var(--ink)]">
+                  Psicoterapia psicanalítica
+                </p>
+                <p class="text-sm text-[var(--muted)]">
+                  Com foco no funcionamento psíquico.
+                </p>
+              </div>
+            </div>
+            <div class="mini-feature flex items-center gap-3 rounded-2xl p-4">
+              <div>
+                <p class="font-bold text-[var(--ink)]">Supervisão clínica</p>
+                <p class="text-sm text-[var(--muted)]">
+                  Individual ou em pequenos grupos.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="sobre" class="bg-white py-20 sm:py-24 lg:py-32">
+        <div
+          class="mx-auto grid max-w-7xl gap-12 px-5 sm:px-8 lg:grid-cols-[.72fr_1.28fr] lg:gap-24"
+        >
+          <div class="lg:pt-3">
+            <p class="eyebrow">Sobre Paula</p>
+            <h2
+              class="display mt-4 max-w-xl text-4xl font-extrabold leading-[1.02] tracking-tight text-[var(--ink)] sm:text-6xl"
+            >
+              Experiência, formação e compromisso clínico.
+            </h2>
+            <div class="rule mt-7"></div>
+          </div>
+          <div class="space-y-7 text-[1.05rem] leading-8 text-[var(--muted)]">
+            <p>
+              Paula Peres Di Salvatore tem mais de 20 anos de experiência em
+              Psicologia Clínica e Psicoterapias, tendo exercido funções nos
+              sectores público e privado e desempenhado atividade de docência no
+              Ensino Superior, ao nível de Licenciatura e Pós-Graduação.
+            </p>
+            <p>
+              A sua prática articula conhecimento teórico e experiência clínica,
+              com especial atenção à compreensão da pessoa, das suas relações,
+              emoções, pensamentos e da forma como estes elementos influenciam a
+              experiência de vida.
+            </p>
+            <div
+              class="mt-9 grid gap-8 border-t border-slate-200/80 pt-8 sm:grid-cols-2"
+            >
+              <div>
+                <div class="flex items-center gap-3">
+                  <h3 class="display text-2xl font-extrabold text-[var(--ink)]">
+                    Formação
+                  </h3>
+                </div>
+                <p class="mt-3 text-sm leading-6 text-[var(--muted)]">
+                  Doutoranda em Psicologia Clínica, Mestrado em Psicologia
+                  Psicanalítica e Licenciatura em Psicologia Aplicada, área
+                  Clínica.
+                </p>
+              </div>
+              <div class="sm:border-l sm:border-slate-200/80 sm:pl-8">
+                <div class="flex items-center gap-3">
+                  <h3 class="display text-2xl font-extrabold text-[var(--ink)]">
+                    Reconhecimento
+                  </h3>
+                </div>
+                <p class="mt-3 text-sm leading-6 text-[var(--muted)]">
+                  Membro Efetivo da OPP, Psicóloga Supervisora e detentora das
+                  Especialidades Avançadas em Psicologia Clínica e da Saúde.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-soft py-20 sm:py-24 lg:py-28">
+        <div class="mx-auto max-w-7xl px-5 sm:px-8">
+          <div class="max-w-3xl">
+            <p class="eyebrow">Percurso profissional</p>
+            <h2
+              class="display mt-4 text-4xl font-extrabold leading-[1.02] text-[var(--ink)] sm:text-6xl"
+            >
+              Uma trajetória construída com rigor.
+            </h2>
+            <div class="rule mt-7"></div>
+          </div>
+          <div
+            class="mt-14 grid gap-0 border-y border-slate-200/80 lg:grid-cols-3"
+          >
+            <article class="py-8 lg:pr-10">
+              <div class="flex items-center gap-3">
+                <span class="number-badge">01</span>
+              </div>
+              <h3
+                class="display mt-7 text-3xl font-extrabold text-[var(--ink)]"
+              >
+                Experiência clínica
+              </h3>
+              <p class="mt-3 leading-7 text-[var(--muted)]">
+                Mais de duas décadas de prática em Psicologia Clínica e
+                Psicoterapias, nos sectores público e privado.
+              </p>
+            </article>
+            <article class="border-slate-200/80 py-8 lg:border-l lg:px-10">
+              <div class="flex items-center gap-3">
+                <span class="number-badge">02</span>
+              </div>
+              <h3
+                class="display mt-7 text-3xl font-extrabold text-[var(--ink)]"
+              >
+                Ensino e formação
+              </h3>
+              <p class="mt-3 leading-7 text-[var(--muted)]">
+                Experiência de docência no Ensino Superior, ao nível de
+                Licenciatura e Pós-Graduação, e exercício de funções como
+                Técnica Superiora de Psicologia.
+              </p>
+            </article>
+            <article class="border-slate-200/80 py-8 lg:border-l lg:pl-10">
+              <div class="flex items-center gap-3">
+                <span class="number-badge">03</span>
+              </div>
+              <h3
+                class="display mt-7 text-3xl font-extrabold text-[var(--ink)]"
+              >
+                Princípios clínicos
+              </h3>
+              <p class="mt-3 leading-7 text-[var(--muted)]">
+                Rigor científico, conhecimento teórico-prático, competência,
+                integridade e Humanismo orientam a prática profissional.
+              </p>
+            </article>
+          </div>
+          <div class="journey-banner mt-9 rounded-[2rem] p-7 text-white sm:p-9">
+            <div
+              class="flex flex-col gap-7 lg:flex-row lg:items-start lg:justify-between"
+            >
+              <div class="max-w-xl">
+                <p
+                  class="text-xs font-extrabold uppercase tracking-[.18em] text-cyan-200"
+                >
+                  Áreas de especialização
+                </p>
+                <p class="mt-4 text-base leading-7 text-white/80">
+                  O percurso inclui também pertença a diferentes organizações e
+                  sociedades profissionais nacionais e internacionais.
+                </p>
+              </div>
+              <div
+                class="grid gap-x-8 gap-y-3 text-sm leading-6 text-white/90 sm:grid-cols-2"
+              >
+                <span
+                  >• PsiRelacional – Associação de Psicanálise Relacional</span
+                >
+                <span>• Sociedade Portuguesa de Psicossomática</span>
+                <span>• British Psychological Society</span>
+                <span>• Tavistock Society of Psychotherapists</span>
+                <span>• European Federation of Psychologists</span>
+                <span>• Psicóloga Supervisora (OPP)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="abordagem" class="bg-white py-20 sm:py-24 lg:py-32">
+        <div class="mx-auto max-w-7xl px-5 sm:px-8">
+          <div class="grid gap-12 lg:grid-cols-[.72fr_1.28fr] lg:gap-20">
+            <div>
+              <p class="eyebrow">Psicologia Clínica e Psicoterapia</p>
+              <h2
+                class="display mt-4 text-4xl font-extrabold leading-[1.0] text-[var(--ink)] sm:text-6xl"
+              >
+                Um espaço para compreender, elaborar e transformar.
+              </h2>
+              <div class="rule mt-7"></div>
+              <p class="mt-7 max-w-md leading-7 text-[var(--muted)]">
+                A proposta terapêutica parte da escuta e do diálogo para
+                favorecer uma compreensão mais consciente de pensamentos,
+                sentimentos, escolhas e relações.
+              </p>
+            </div>
+            <div
+              class="divide-y divide-slate-200/90 border-y border-slate-200/80"
+            >
+              <article class="py-8 first:pt-8 last:pb-8">
+                <div class="flex gap-5">
+                  <span class="mt-1 text-sm font-extrabold text-cyan-500"
+                    >01</span
+                  >
+                  <div>
+                    <div class="flex items-center gap-3">
+                      <h3
+                        class="display text-3xl font-extrabold text-[var(--ink)]"
+                      >
+                        Escuta e diálogo
+                      </h3>
+                    </div>
+                    <p class="mt-3 max-w-3xl leading-7 text-[var(--muted)]">
+                      A pessoa é convidada a falar sobre si e, através do
+                      diálogo com o psicólogo, a entrar em contacto com
+                      conteúdos que podem influenciar a forma de agir, pensar e
+                      sentir.
+                    </p>
+                  </div>
+                </div>
+              </article>
+              <article class="py-8">
+                <div class="flex gap-5">
+                  <span class="mt-1 text-sm font-extrabold text-cyan-500"
+                    >02</span
+                  >
+                  <div>
+                    <div class="flex items-center gap-3">
+                      <h3
+                        class="display text-3xl font-extrabold text-[var(--ink)]"
+                      >
+                        Compreensão do mundo interno
+                      </h3>
+                    </div>
+                    <p class="mt-3 max-w-3xl leading-7 text-[var(--muted)]">
+                      A reflexão clínica considera emoções, pensamentos,
+                      fantasias, sonhos e a experiência relacional, procurando
+                      ampliar a consciência sobre o funcionamento pessoal.
+                    </p>
+                  </div>
+                </div>
+              </article>
+              <article class="py-8">
+                <div class="flex gap-5">
+                  <span class="mt-1 text-sm font-extrabold text-cyan-500"
+                    >03</span
+                  >
+                  <div>
+                    <div class="flex items-center gap-3">
+                      <h3
+                        class="display text-3xl font-extrabold text-[var(--ink)]"
+                      >
+                        Transformação e autonomia
+                      </h3>
+                    </div>
+                    <p class="mt-3 max-w-3xl leading-7 text-[var(--muted)]">
+                      O processo terapêutico procura favorecer autoconhecimento,
+                      redução do sofrimento, transformação pessoal, confiança,
+                      autonomia e liberdade.
+                    </p>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="quote-card mt-10 rounded-[2.3rem] p-8 sm:p-10 lg:p-12">
+            <p class="eyebrow">Psicoterapia de inspiração psicanalítica</p>
+            <div class="mt-5 grid gap-8 lg:grid-cols-[1fr_auto] lg:items-end">
+              <p
+                class="display max-w-4xl text-3xl font-extrabold leading-tight text-[var(--ink)] sm:text-5xl"
+              >
+                “Compreender o presente para abrir novas perspetivas sobre o Eu,
+                as relações e o futuro.”
+              </p>
+              <div
+                class="flex items-center gap-3 text-sm font-bold text-violet-600"
+              >
+                <span
+                  class="h-1.5 w-10 rounded-full bg-gradient-to-r from-cyan-400 to-violet-500"
+                ></span>
+                Processo terapêutico
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        id="supervisao"
+        class="supervision py-20 text-white sm:py-24 lg:py-32"
+      >
+        <div class="mx-auto max-w-7xl px-5 sm:px-8">
+          <div class="grid gap-12 lg:grid-cols-[.75fr_1.25fr] lg:gap-20">
+            <div>
+              <p
+                class="text-xs font-extrabold uppercase tracking-[.18em] text-cyan-200"
+              >
+                Supervisão Clínica
+              </p>
+              <h2
+                class="display mt-4 text-4xl font-extrabold leading-[.98] sm:text-6xl"
+              >
+                Acompanhar quem cuida.
+              </h2>
+              <div
+                class="mt-7 h-1 w-14 rounded-full bg-gradient-to-r from-cyan-300 to-pink-300"
+              ></div>
+              <p class="mt-7 max-w-lg text-lg leading-8 text-white/80">
+                A supervisão clínica proporciona um espaço de reflexão e
+                formação profissional, centrado na prática clínica e no
+                desenvolvimento de competências.
+              </p>
+            </div>
+            <div class="divide-y divide-white/15 border-y border-white/15">
+              <article class="py-7 first:pt-7">
+                <div class="flex gap-5">
+                  <span class="mt-1 text-sm font-extrabold text-cyan-200"
+                    >01</span
+                  >
+                  <div>
+                    <div class="flex items-center gap-3">
+                      <h3 class="display text-3xl font-extrabold">
+                        Refletir sobre a prática
+                      </h3>
+                    </div>
+                    <p class="mt-3 leading-7 text-white/70">
+                      Explorar a dinâmica psicológica do paciente, a técnica e
+                      as questões que emergem no trabalho clínico.
+                    </p>
+                  </div>
+                </div>
+              </article>
+              <article class="py-7">
+                <div class="flex gap-5">
+                  <span class="mt-1 text-sm font-extrabold text-cyan-200"
+                    >02</span
+                  >
+                  <div>
+                    <div class="flex items-center gap-3">
+                      <h3 class="display text-3xl font-extrabold">
+                        Compreender a relação
+                      </h3>
+                    </div>
+                    <p class="mt-3 leading-7 text-white/70">
+                      Atenção à transferência e à relação terapêutica como
+                      elementos fundamentais da compreensão clínica.
+                    </p>
+                  </div>
+                </div>
+              </article>
+              <article class="py-7">
+                <div class="flex gap-5">
+                  <span class="mt-1 text-sm font-extrabold text-cyan-200"
+                    >03</span
+                  >
+                  <div>
+                    <div class="flex items-center gap-3">
+                      <h3 class="display text-3xl font-extrabold">
+                        Formação profissional
+                      </h3>
+                    </div>
+                    <p class="mt-3 leading-7 text-white/70">
+                      Apoio ao desenvolvimento teórico-prático, ético e técnico
+                      de psicólogos em formação e em exercício.
+                    </p>
+                  </div>
+                </div>
+              </article>
+              <article class="py-7 last:pb-7">
+                <div class="flex gap-5">
+                  <span class="mt-1 text-sm font-extrabold text-cyan-200"
+                    >04</span
+                  >
+                  <div>
+                    <div class="flex items-center gap-3">
+                      <h3 class="display text-3xl font-extrabold">
+                        Individual ou grupo
+                      </h3>
+                    </div>
+                    <p class="mt-3 leading-7 text-white/70">
+                      Supervisões individuais ou em pequenos grupos, com foco na
+                      qualidade dos cuidados prestados.
+                    </p>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contactos" class="section-soft py-20 sm:py-24 lg:py-32">
+        <div class="mx-auto max-w-7xl px-5 sm:px-8">
+          <div class="mx-auto max-w-3xl text-center">
+            <p class="eyebrow">Contactos</p>
+            <h2
+              class="display mt-4 text-4xl font-extrabold leading-none text-[var(--ink)] sm:text-6xl"
+            >
+              Vamos conversar.
+            </h2>
+          </div>
+          <div
+            class="mt-12 grid gap-10 lg:grid-cols-[1.08fr_.92fr] lg:items-start"
+          >
+            <div>
+              <div
+                class="max-w-3xl space-y-6 text-[1.05rem] leading-8 text-[var(--muted)]"
+              >
+                <p>
+                  Contacte-me para uma marcação ou primeira consulta. Numa
+                  primeira consulta procuram-se avaliar e compreender os temas
+                  mais preocupante para o paciente e organizam-se os objectivos
+                  terapêuticos. É abordada a natureza das dificuldades, o que
+                  será mais indicado em termos de intervenção, e qual o âmbito
+                  do acompanhamento clínico.
+                </p>
+                <p>
+                  As sessões são regulares e cada uma tem a duração de 50
+                  minutos. A frequência das sessões, o horário e o pagamento das
+                  são acordados previamente entre o paciente e o psicólogo,
+                  estas podem realizar-se presencialmente ou on-line. As
+                  consultas são em português, para além das opções de inglês,
+                  italiano ou castelhano.
+                </p>
+                <p>
+                  As consultas são enquadradas pelo código de ética profissional
+                  que preserva uma rigorosa confidencialidade e que respeita os
+                  valores e a autonomia individual. A autenticidade, a
+                  imparcialidade e a integridade do profissional são condições
+                  indispensáveis ao trabalho clínico, no sentido de se obterem
+                  os melhores resultados para cada paciente.
+                </p>
+              </div>
+              <div
+                class="mt-10 grid gap-5 border-y border-slate-200/80 py-6 sm:grid-cols-2"
+              >
+                <div>
+                  <p class="eyebrow">Onde encontrar</p>
+                  <h3
+                    class="display mt-2 text-3xl font-extrabold text-[var(--ink)]"
+                  >
+                    Lisboa
+                  </h3>
+                  <p class="mt-2 text-[var(--muted)]">
+                    Avenida António Serpa 32, 1050-027 Lisboa
+                  </p>
+                </div>
+                <div class="sm:border-l sm:border-slate-200/80 sm:pl-6">
+                  <p class="eyebrow">Contacto direto</p>
+                  <div
+                    class="mt-3 space-y-2 text-sm font-semibold text-[var(--ink)]"
+                  >
+                    <a
+                      class="block transition hover:text-cyan-600"
+                      href="https://api.whatsapp.com/send?phone=351910724621"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >WhatsApp · Falar diretamente</a
+                    >
+                    <a
+                      class="block transition hover:text-violet-600"
+                      href="mailto:clinicapaulasite@gmail.com"
+                      >Email · clinicapaulasite@gmail.com</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div
+                class="mt-7 overflow-hidden rounded-[1.8rem] border border-slate-200/70 bg-white shadow-[0_15px_45px_rgba(49,117,156,.08)]"
+              >
+                <div class="h-[250px] sm:h-[300px]">
+                  <iframe
+                    title="Mapa - Avenida António Serpa 32, Lisboa"
+                    src="https://www.google.com/maps?q=Avenida%20António%20Serpa%2032,%201050-027%20Lisboa&output=embed"
+                    class="h-full w-full border-0"
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+              </div>
+            </div>
+            <div
+              class="contact-panel rounded-[2.3rem] p-7 shadow-[0_20px_60px_rgba(49,117,156,.09)] sm:p-10 lg:sticky lg:top-28"
+            >
+              <p class="eyebrow">Mensagem</p>
+              <h3
+                class="display mt-2 text-4xl font-extrabold text-[var(--ink)]"
+              >
+                Entre em contacto
+              </h3>
+              <form
+                action="https://formsubmit.co/clinicapaulasite@gmail.com"
+                method="POST"
+                class="mt-8 space-y-5"
+              >
+                <input
+                  type="hidden"
+                  name="_subject"
+                  value="Nova mensagem pelo site da Paula Peres Di Salvatore"
+                />
+                <input type="hidden" name="_captcha" value="false" />
+                <div>
+                  <label
+                    for="nome"
+                    class="mb-2 block text-sm font-bold text-[var(--ink)]"
+                    >Nome</label
+                  >
+                  <input
+                    id="nome"
+                    name="nome"
+                    type="text"
+                    autocomplete="name"
+                    required
+                    class="field w-full rounded-2xl px-4 py-3.5 text-[var(--ink)] outline-none transition placeholder:text-slate-400"
+                    placeholder="O seu nome"
+                  />
+                </div>
+                <div>
+                  <label
+                    for="email"
+                    class="mb-2 block text-sm font-bold text-[var(--ink)]"
+                    >Email</label
+                  >
+                  <input
+                    id="email"
+                    name="email"
+                    type="email"
+                    autocomplete="email"
+                    required
+                    class="field w-full rounded-2xl px-4 py-3.5 text-[var(--ink)] outline-none transition placeholder:text-slate-400"
+                    placeholder="nome@email.com"
+                  />
+                </div>
+                <div>
+                  <label
+                    for="mensagem"
+                    class="mb-2 block text-sm font-bold text-[var(--ink)]"
+                    >Mensagem</label
+                  >
+                  <textarea
+                    id="mensagem"
+                    name="mensagem"
+                    rows="6"
+                    required
+                    class="field w-full rounded-2xl px-4 py-3.5 text-[var(--ink)] outline-none transition placeholder:text-slate-400"
+                    placeholder="Escreva brevemente o motivo do contacto..."
+                  ></textarea>
+                </div>
+                <button
+                  type="submit"
+                  class="btn-primary flex w-full items-center justify-center gap-2 rounded-full px-6 py-4 text-sm font-bold text-white transition"
+                >
+                  Enviar mensagem
+                </button>
+                <p class="text-xs leading-5 text-slate-400">
+                  Ao enviar a mensagem, os dados serão utilizados apenas para
+                  responder ao seu contacto.
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer py-10 text-white">
+      <div
+        class="mx-auto flex max-w-7xl flex-col gap-6 px-5 sm:px-8 md:flex-row md:items-end md:justify-between"
+      >
+        <div>
+          <p class="display text-3xl font-extrabold">
+            Paula Peres Di Salvatore
+          </p>
+          <p class="mt-1 text-sm text-white/65">
+            Psicologia Clínica · Psicoterapia · Supervisão Clínica
+          </p>
+        </div>
+        <div class="text-sm text-white/55 md:text-right">
+          <p>© 2026 Paula Peres Di Salvatore</p>
+          <p class="mt-1">Lisboa, Portugal</p>
+        </div>
+      </div>
+    </footer>
+    <a
+      href="https://api.whatsapp.com/send?phone=351910724621"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Falar no WhatsApp"
+      class="whatsapp fixed bottom-5 right-5 z-50 inline-flex h-14 w-14 items-center justify-center rounded-full text-white transition hover:-translate-y-1 sm:bottom-6 sm:right-6"
+    >
+    </a>
+    <script type="module">
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/12.17.1/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.17.1/firebase-analytics.js";
+      const firebaseConfig = {
+        apiKey: "AIzaSyAOLwhsfKUox1TLffUonWRbblPSukPUnjU",
+        authDomain: "clinicapaulasite-ab5db.firebaseapp.com",
+        projectId: "clinicapaulasite-ab5db",
+        storageBucket: "clinicapaulasite-ab5db.firebasestorage.app",
+        messagingSenderId: "39244238224",
+        appId: "1:39244238224:web:ad971acb2d45f40d7c3715",
+        measurementId: "G-PWJG63T1PX",
+      };
+      try {
+        const app = initializeApp(firebaseConfig);
+        getAnalytics(app);
+      } catch (error) {
+        console.warn("Firebase Analytics não foi inicializado:", error);
+      }
+    </script>
+    <script>
+      const button = document.getElementById("mobile-menu-button");
+      const menu = document.getElementById("mobile-menu");
+      if (button && menu) {
+        button.addEventListener("click", () => {
+          const isOpen = button.getAttribute("aria-expanded") === "true";
+          button.setAttribute("aria-expanded", String(!isOpen));
+          menu.classList.toggle("hidden");
+        });
+        menu.querySelectorAll("a").forEach((link) => {
+          link.addEventListener("click", () => {
+            menu.classList.add("hidden");
+            button.setAttribute("aria-expanded", "false");
+          });
+        });
+      }
+    </script>
+  </body>
+</html>
