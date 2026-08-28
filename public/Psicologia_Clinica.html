@@ -1,0 +1,657 @@
+<!doctype html>
+<html lang="pt-PT">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paula Peres Di Salvatore – Psicologia Clínica & Psicoterapia</title>
+    <meta
+      name="description"
+      content="Psicologia Clínica, Psicoterapia e Supervisão Clínica."
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./IMG-20260814-WA0000.jpg"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./IMG-20260814-WA0000.jpg"
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brand: {
+                bg: "#F2F0EA",
+                bg2: "#DDE7E0",
+                text: "#28322E",
+                rose: "#6F8178",
+                rose2: "#9A7B67",
+                rose3: "#A9B9AF",
+                dark: "#3E5149",
+                soft: "#7D8F86",
+                pink: "#C9A58D",
+                pink2: "#7B8E84",
+                pink3: "#8B6F5E",
+                accent: "#7B5E4A",
+                teal: "#4F7568",
+                cream: "#FBF8F2",
+                white: "#FDFCF8",
+                greenwhite: "#F4F6F1",
+              },
+            },
+            fontFamily: {
+              heading: ["Lato", "sans-serif"],
+              body: ["Lora", "serif"],
+            },
+          },
+        },
+      };
+    </script>
+
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        background: #f2f0ea;
+        color: #28322e;
+        overflow-x: hidden;
+      }
+      .section-shadow {
+        box-shadow: 0 4px 24px rgba(0, 0, 0, 0.05);
+      }
+      .soft-card {
+        background: #fdfcf8;
+        border: 1px solid rgba(183, 110, 121, 0.2);
+        box-shadow: 0 12px 32px rgba(183, 110, 121, 0.1);
+      }
+      .accent-line {
+        width: 72px;
+        height: 3px;
+        border-radius: 999px;
+        background: #7b5e4a;
+      }
+      .frame-top-right,
+      .frame-bottom-left {
+        position: absolute;
+        pointer-events: none;
+        background-image: url("./Molduras.png");
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        z-index: 1;
+        opacity: 0.92;
+      }
+      .frame-top-right {
+        top: 1.5rem;
+        right: -0.25rem;
+        width: min(26vw, 320px);
+        aspect-ratio: 408 / 240;
+        background-position: top right;
+      }
+
+      .frame-supervision {
+        position: absolute;
+        top: -5px;
+        right: 0;
+        width: min(32vw, 408px);
+        aspect-ratio: 408 / 240;
+        pointer-events: none;
+        background-image: url("./moldura-top-right.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: top right;
+        z-index: 10;
+        opacity: 0.9;
+      }
+      .frame-bottom-left {
+        bottom: 1rem;
+        left: 0;
+        width: min(32vw, 408px);
+        aspect-ratio: 408 / 282;
+        background-position: bottom left;
+      }
+      .frame-content {
+        position: relative;
+        z-index: 2;
+      }
+      .prose-site p {
+        margin-bottom: 1.15rem;
+      }
+      .prose-site p:last-child {
+        margin-bottom: 0;
+      }
+      .prose-site ul {
+        margin-top: 0.4rem;
+      }
+      .prose-site li {
+        margin-bottom: 0.7rem;
+      }
+      @media (max-width: 767px) {
+        .frame-supervision {
+          width: 220px;
+          aspect-ratio: 408 / 240;
+          top: -5px;
+          right: 0;
+          opacity: 0.72;
+        }
+        .mobile-text {
+          font-size: 1rem;
+          line-height: 1.8;
+        }
+        .mobile-title {
+          font-size: 2rem;
+          line-height: 1.15;
+        }
+        .mobile-section {
+          padding-top: 4rem;
+          padding-bottom: 4rem;
+        }
+        .mobile-card {
+          padding: 1.25rem;
+          border-radius: 1.25rem;
+        }
+        .mobile-list {
+          padding-left: 1.15rem;
+        }
+        .frame-top-right {
+          top: 0.5rem;
+          width: 190px;
+          opacity: 0.82;
+        }
+        .frame-bottom-left {
+          bottom: 0.5rem;
+          width: 180px;
+          opacity: 0.82;
+        }
+      }
+    </style>
+  </head>
+
+  <body class="font-body antialiased">
+    <header
+      class="fixed w-full bg-brand-white/95 backdrop-blur-md shadow-sm z-50"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center py-3">
+          <a href="#inicio" class="flex-shrink-0">
+            <img
+              class="h-10 w-auto sm:h-12"
+              src="./IMG-20260814-WA0000-removebg-preview.png"
+              alt="Paula Peres Di Salvatore"
+            />
+          </a>
+
+          <nav class="hidden md:flex items-center space-x-8">
+            <a
+              href="#sobre"
+              class="text-brand-rose hover:text-brand-accent font-medium transition"
+              >Sobre</a
+            >
+            <a
+              href="#contactos"
+              class="text-brand-rose hover:text-brand-accent font-medium transition"
+              >Contactos</a
+            >
+          </nav>
+
+          <button
+            id="mobile-menu-button"
+            class="md:hidden text-brand-dark p-2"
+            aria-label="Abrir menu"
+            aria-expanded="false"
+          >
+            <i data-lucide="menu" class="h-7 w-7"></i>
+          </button>
+        </div>
+      </div>
+
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden bg-brand-white border-t border-brand-bg2"
+      >
+        <div class="px-4 py-3">
+          <a
+            href="#sobre"
+            class="block text-brand-dark font-medium py-3 border-b border-brand-bg2"
+            >Sobre</a
+          >
+          <a href="#contactos" class="block text-brand-dark font-medium py-3"
+            >Contactos</a
+          >
+        </div>
+      </div>
+    </header>
+
+    <section
+      id="inicio"
+      class="relative pt-28 pb-16 md:pt-36 md:pb-24 overflow-hidden"
+      style="
+        background: linear-gradient(
+          135deg,
+          #dde7e0 0%,
+          #f2f0ea 55%,
+          #fbf8f2 100%
+        );
+      "
+    >
+      <div
+        class="absolute inset-0 bg-[url('./Flor.jpg')] bg-cover bg-center opacity-20"
+      ></div>
+      <div
+        class="frame-content max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center"
+      >
+        <div class="max-w-4xl mx-auto">
+          <div class="accent-line mx-auto mb-6"></div>
+          <h1
+            class="text-4xl sm:text-5xl lg:text-6xl font-heading font-bold text-brand-dark mb-5 leading-tight"
+          >
+            Psicologia Clínica &amp; Psicoterapia
+          </h1>
+        </div>
+      </div>
+    </section>
+
+    <main id="sobre">
+      <section
+        class="relative py-16 md:py-24 bg-brand-white section-shadow mobile-section"
+      >
+        <div class="frame-supervision" aria-hidden="true"></div>
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-10">
+            <span
+              class="text-brand-accent font-heading font-semibold uppercase tracking-[0.14em] text-sm"
+              >Supervisão Clínica</span
+            >
+            <h2
+              class="mt-3 text-3xl md:text-4xl mobile-title font-heading font-bold text-brand-dark"
+            >
+              Supervisão Clínica
+            </h2>
+            <div class="accent-line mx-auto mt-5"></div>
+          </div>
+
+          <div
+            class="soft-card rounded-3xl p-7 md:p-10 mobile-card prose-site text-brand-text leading-relaxed mobile-text"
+          >
+            <p>
+              A supervisão clínica é uma competência de orientação e formação
+              profissional que inclui capacidades e conhecimentos específicos,
+              na qual um Psicólogo Supervisor Sénior proporciona supervisão
+              clínica a um Psicólogo Supervisando, com o objectivo de refletir
+              sobre sua prática clínica, compreender a dinâmica psicológica do
+              paciente, explorar a transferência na relação terapêutica,
+              melhorar o manejo da técnica e a sua compreensão teórica.
+            </p>
+            <p>
+              A supervisão dos estágios académicos e profissionais é um aspecto
+              fundamental da formação em Psicologia e é necessária para a
+              obtenção da certificação profissional. Ajuda a garantir que os
+              psicólogos em formação desenvolvem as capacidades necessárias para
+              a prática ética e eficaz, aprofundando o seu conhecimento teórico
+              e prático.
+            </p>
+            <p>
+              A prioridade das supervisões centra-se na qualidade dos cuidados
+              de saúde mental prestados aos paciente e ao desenvolvimento
+              profissional. As Supervisões podem ser individuais ou em pequenos
+              grupos.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-16 md:py-24 bg-brand-bg mobile-section">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="grid md:grid-cols-5 gap-10 lg:gap-14 items-start">
+            <div class="md:col-span-2 flex justify-center md:sticky md:top-28">
+              <img
+                src="./PerfilFoto.jpg"
+                alt="Paula Peres Di Salvatore"
+                width="520"
+                height="520"
+                loading="lazy"
+                decoding="async"
+                class="w-[260px] h-[260px] sm:w-[320px] sm:h-[320px] md:w-[390px] md:h-[390px] lg:w-[460px] lg:h-[460px] object-cover rounded-full shadow-2xl border-8 border-brand-white"
+              />
+            </div>
+
+            <div class="md:col-span-3">
+              <div class="text-center md:text-left mb-8">
+                <span
+                  class="text-brand-accent font-heading font-semibold uppercase tracking-[0.14em] text-sm"
+                  >Percurso profissional</span
+                >
+                <h2
+                  class="mt-3 text-3xl md:text-4xl mobile-title font-heading font-bold text-brand-dark"
+                >
+                  Experiência, formação e princípios
+                </h2>
+                <div class="accent-line mt-5 mx-auto md:mx-0"></div>
+              </div>
+
+              <div
+                class="soft-card rounded-3xl p-7 md:p-9 mobile-card prose-site leading-relaxed mobile-text text-brand-text"
+              >
+                <p>
+                  Experiência de mais de 20 anos em Psicologia Clínica e
+                  Psicoterapias. Exerceu no sector Públicos e Privado. Leccionou
+                  enquanto docente do docente do Ensino Superior ao nível de
+                  Licenciatura e Pós-Graduação e exerceu cargos de Técnica
+                  Superiora de Psicologia.
+                </p>
+
+                <ul class="list-disc pl-6 mobile-list">
+                  <li>
+                    Doutoranda em Psicologia, na especialidade de Clínica:
+                    Instituto Superior de Psicologia Aplicada, Lisboa.
+                  </li>
+                  <li>
+                    Mestrado em Psicologia Psicanalítica: Tavistock and Portman,
+                    NHS Trust, Londres.
+                  </li>
+                  <li>
+                    Licenciatura em Psicologia Aplicada, área Clínica: Instituto
+                    Superior de Psicologia Aplicada, Lisboa.
+                  </li>
+                </ul>
+
+                <ul class="list-disc pl-6 mobile-list mt-7">
+                  <li>
+                    Membro Efetivo da Ordem dos Psicólogos Portugueses (OPP),
+                    Cédula Profissional Nº 11626.
+                  </li>
+                  <li>
+                    Psicóloga detentora da Especialidade Avançada em Psicologia
+                    Clínica e da Saúde (OPP).
+                  </li>
+                  <li>
+                    Psicóloga detentora da Especialidade Avançada em Psicologia
+                    Educacional (OPP).
+                  </li>
+                  <li>Psicóloga Supervisora (OPP).</li>
+                  <li>
+                    Membro candidato da PsiRelacional - Associação de
+                    Psicanálise Relacional.
+                  </li>
+                  <li>Membro da Sociedade Portuguesa de Psicossomática.</li>
+                  <li>Membro Graduado da British Psychological Society.</li>
+                  <li>
+                    Membro Efectivo da Tavistock Society of Psychotherapists and
+                    Allied Professionals.
+                  </li>
+                  <li>
+                    Membro da European Federation of Psychologists Associations.
+                  </li>
+                </ul>
+
+                <p class="mt-7">
+                  Os meus princípios pessoais baseiam-se no rigor científico, no
+                  conhecimento teórico-prático, na competência, na integridade e
+                  no Humanismo.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="py-16 md:py-24 bg-brand-cream section-shadow mobile-section"
+      >
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-10">
+            <span
+              class="text-brand-accent font-heading font-semibold uppercase tracking-[0.14em] text-sm"
+              >Psicologia Clínica e Psicoterapia</span
+            >
+            <h2
+              class="mt-3 text-3xl md:text-4xl mobile-title font-heading font-bold text-brand-dark"
+            >
+              Psicologia Clínica e Psicoterapia
+            </h2>
+            <div class="accent-line mx-auto mt-5"></div>
+          </div>
+
+          <div
+            class="soft-card rounded-3xl p-7 md:p-10 mobile-card prose-site text-brand-text leading-relaxed mobile-text"
+          >
+            <p>
+              A Psicologia Clínica e Psicoterapia consistem em formas de
+              intervenções terapêuticas que favorecem a Saúde Mental, o
+              desenvolvimento saudável da vida psíquica e emocional, permitindo
+              vivências mais harmoniosas e promotoras de um crescente bem-estar.
+            </p>
+            <p>
+              A proposta terapêutica consiste em ajudar o paciente a falar sobre
+              si e a partir deste diálogo entrar em contato com conteúdos que
+              fogem à sua compreensão, mas que influenciam sua forma de agir,
+              pensar e sentir. A pessoa é convidada, com o auxílio do psicólogo,
+              a reflectir e a analisar a realidade, as emoções, os pensamentos,
+              as fantasias e os sonhos. É através da escuta e do diálogo
+              centrado no funcionamento pessoal e relacional que as intervenções
+              psicológicas e terapêuticas ajudam os pacientes a tornarem-se mais
+              conscientes de si, dos seus pensamentos, dos seus sentimentos e
+              das suas escolhas. Através deste processo transforma-se o
+              sofrimento e emergem novas perspectivas sobre o Eu, sobre a
+              qualidade das suas relações intrapsíquicas e interpessoais.
+            </p>
+            <p>
+              As consultas de psicoterapia de inspiração psicanalítica têm como
+              objectivo terapêutico o auto-conhecimento, a diminuição do
+              sofrimento, a transformação pessoal, sobretudo através da
+              compreensão dos aspectos inconscientes que operam nos conflitos e
+              nos sintomas. Traduzem uma via de acesso ao funcionamento mental
+              enquanto forma de alcançar a compreensão da sintomatologia
+              psíquica, a redução de angústias impeditivas, sendo promotoras de
+              sentidos para a vida.
+            </p>
+            <p>
+              Através de uma relação terapêutica empática a pessoa tem a
+              capacidade de reflectir sobre o passado, de modo a compreender o
+              presente e a desenvolver capacidades que permitam construir um
+              futuro mais livre, feliz e aprazível.
+            </p>
+            <p>
+              O processo terapêutico decorre através de sessões regulares
+              focadas em experiências cruciais que influenciam a personalidade,
+              as vivências, os relacionamentos, proporcionando ao paciente uma
+              vida com maior confiança, autonomia e liberdade.
+            </p>
+            <p>
+              A consulta clínica tem por objectivo analisar as dificuldades dos
+              pacientes, através da compreensão dos problemas e insatisfações,
+              que influenciam todo o relacionamento interpessoal, bem como as
+              expectativas e a imagem que cada pessoa tem de si, das suas
+              vivências e dos seus actos. Na prática materializa-se numa
+              intervenção técnica orientada para os resultados, respeitando os
+              valores da pessoa humana.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <section
+      id="contactos"
+      class="relative py-16 md:py-24 bg-brand-white mobile-section section-shadow overflow-hidden"
+    >
+      <div class="frame-bottom-left" aria-hidden="true"></div>
+      <div class="frame-content max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-10">
+          <h2
+            class="text-3xl md:text-4xl mobile-title font-heading font-bold text-brand-dark"
+          >
+            Contactos
+          </h2>
+          <div class="accent-line mx-auto mt-5"></div>
+        </div>
+
+        <div class="grid lg:grid-cols-2 gap-8 lg:gap-10 items-stretch">
+          <div class="soft-card rounded-2xl overflow-hidden flex flex-col">
+            <div class="p-6 md:p-7">
+              <h3 class="text-2xl font-heading font-bold text-brand-dark mb-2">
+                Localização
+              </h3>
+              <p class="text-brand-text leading-relaxed">
+                Avenida António Serpa 32, 1050-027 Lisboa
+              </p>
+            </div>
+            <div class="w-full flex-1 min-h-[320px] lg:min-h-[460px]">
+              <iframe
+                title="Mapa - Avenida António Serpa 32, Lisboa"
+                src="https://www.google.com/maps?q=Avenida%20António%20Serpa%2032,%201050-027%20Lisboa&output=embed"
+                class="w-full h-full min-h-[320px] lg:min-h-[460px] border-0"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                allowfullscreen
+              >
+              </iframe>
+            </div>
+          </div>
+
+          <div class="soft-card rounded-2xl p-6 md:p-10 mobile-card">
+            <h3 class="text-2xl font-heading font-bold text-brand-dark mb-6">
+              Envie uma mensagem
+            </h3>
+            <form
+              action="https://formsubmit.co/clinicapaulasite@gmail.com"
+              method="POST"
+              class="space-y-5"
+            >
+              <input
+                type="hidden"
+                name="_subject"
+                value="Nova mensagem pelo site"
+              />
+              <input type="hidden" name="_captcha" value="false" />
+              <div>
+                <label
+                  for="nome"
+                  class="block text-sm font-medium text-brand-dark mb-1"
+                  >Nome</label
+                >
+                <input
+                  type="text"
+                  id="nome"
+                  name="nome"
+                  required
+                  class="w-full px-4 py-3 border border-brand-rose2 rounded-xl focus:outline-none focus:ring-2 focus:ring-brand-accent bg-brand-bg"
+                />
+              </div>
+              <div>
+                <label
+                  for="email"
+                  class="block text-sm font-medium text-brand-dark mb-1"
+                  >Email</label
+                >
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  class="w-full px-4 py-3 border border-brand-rose2 rounded-xl focus:outline-none focus:ring-2 focus:ring-brand-accent bg-brand-bg"
+                />
+              </div>
+              <div>
+                <label
+                  for="mensagem"
+                  class="block text-sm font-medium text-brand-dark mb-1"
+                  >Mensagem</label
+                >
+                <textarea
+                  id="mensagem"
+                  name="mensagem"
+                  rows="5"
+                  class="w-full px-4 py-3 border border-brand-rose2 rounded-xl focus:outline-none focus:ring-2 focus:ring-brand-accent bg-brand-bg"
+                ></textarea>
+              </div>
+              <button
+                type="submit"
+                class="w-full py-3.5 bg-brand-dark text-white font-heading font-semibold rounded-xl hover:bg-brand-accent transition"
+              >
+                Enviar
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="py-6 bg-brand-bg">
+      <div
+        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-center sm:text-left"
+      >
+        <p class="text-sm text-brand-dark">
+          Copyright © 2026 Paula Peres Di Salvatore
+        </p>
+        <div class="flex space-x-6 text-sm">
+          <a href="#sobre" class="text-brand-dark hover:text-brand-accent"
+            >Sobre</a
+          >
+          <a href="#contactos" class="text-brand-dark hover:text-brand-accent"
+            >Contactos</a
+          >
+        </div>
+      </div>
+    </footer>
+
+    <a
+      href="https://api.whatsapp.com/send?phone=351910724621"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="fixed bottom-5 right-5 sm:bottom-6 sm:right-6 bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition z-50 flex items-center justify-center"
+      aria-label="Falar no WhatsApp"
+    >
+      <i data-lucide="message-circle" class="h-7 w-7 sm:h-8 sm:w-8"></i>
+    </a>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <script type="module">
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/12.17.1/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.17.1/firebase-analytics.js";
+
+      const firebaseConfig = {
+        apiKey: "AIzaSyAOLwhsfKUox1TLffUonWRbblPSukPUnjU",
+        authDomain: "clinicapaulasite-ab5db.firebaseapp.com",
+        projectId: "clinicapaulasite-ab5db",
+        storageBucket: "clinicapaulasite-ab5db.firebasestorage.app",
+        messagingSenderId: "39244238224",
+        appId: "1:39244238224:web:ad971acb2d45f40d7c3715",
+        measurementId: "G-PWJG63T1PX",
+      };
+
+      const app = initializeApp(firebaseConfig);
+      getAnalytics(app);
+    </script>
+
+    <script>
+      lucide.createIcons();
+
+      const menuButton = document.getElementById("mobile-menu-button");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      if (menuButton && mobileMenu) {
+        menuButton.addEventListener("click", () => {
+          mobileMenu.classList.toggle("hidden");
+          const expanded = menuButton.getAttribute("aria-expanded") === "true";
+          menuButton.setAttribute("aria-expanded", String(!expanded));
+        });
+
+        mobileMenu.querySelectorAll("a").forEach((link) => {
+          link.addEventListener("click", () => {
+            mobileMenu.classList.add("hidden");
+            menuButton.setAttribute("aria-expanded", "false");
+          });
+        });
+      }
+    </script>
+  </body>
+</html>
