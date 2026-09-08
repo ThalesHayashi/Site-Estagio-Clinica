@@ -1,0 +1,3051 @@
+<!doctype html>
+<html lang="pt-PT">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <meta name="theme-color" content="#eef8ff" />
+
+  <meta
+    name="description"
+    content="Paula Peres Di Salvatore — Psicologia Clínica, Psicoterapia e Supervisão Clínica em Lisboa."
+  />
+
+  <title>
+    Paula Peres Di Salvatore | Psicologia Clínica & Psicoterapia
+  </title>
+
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="32x32"
+    href="./IMG-20260814-WA0000.jpg"
+  />
+
+  <link
+    rel="apple-touch-icon"
+    sizes="180x180"
+    href="./IMG-20260814-WA0000.jpg"
+  />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: [
+              "Inter",
+              "ui-sans-serif",
+              "system-ui",
+              "sans-serif"
+            ]
+          }
+        }
+      }
+    };
+  </script>
+
+  <style>
+
+    :root {
+      --ink: #15304a;
+      --muted: #5d7287;
+
+      --blue: #1597d5;
+      --blue-soft: #64b9df;
+
+      --violet: #7467ee;
+
+      --aqua: #9de9e1;
+      --pink: #ffb6d9;
+
+      --sky: #eef9fd;
+      --paper: #ffffff;
+
+      --line:
+        rgba(21, 48, 74, .09);
+
+      --shadow-sm:
+        0 10px 34px rgba(49, 117, 156, .08);
+    }
+
+
+    * {
+      box-sizing: border-box;
+    }
+
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+
+    body {
+      margin: 0;
+
+      background: var(--sky);
+      color: var(--ink);
+
+      font-family:
+        Inter,
+        ui-sans-serif,
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+
+      overflow-x: hidden;
+    }
+
+
+    ::selection {
+      background: var(--aqua);
+      color: var(--ink);
+    }
+
+
+    a {
+      text-decoration: none;
+    }
+
+
+    button,
+    input,
+    textarea {
+      font: inherit;
+    }
+
+
+    section {
+      scroll-margin-top: 100px;
+    }
+
+
+    .display {
+      font-family:
+        Inter,
+        ui-sans-serif,
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+    }
+
+
+    /* =====================================================
+       TEXTO EM GRADIENTE
+    ===================================================== */
+
+    .gradient-text {
+      display: inline-block;
+
+      background:
+        linear-gradient(
+          100deg,
+          #1597d5 5%,
+          #656df0 55%,
+          #dc62b4 100%
+        );
+
+      -webkit-background-clip: text;
+      background-clip: text;
+
+      color: transparent;
+    }
+
+
+
+    /* =====================================================
+       NAVBAR
+    ===================================================== */
+
+    .nav-blur {
+      background:
+        rgba(255, 255, 255, .90);
+
+      backdrop-filter:
+        blur(18px);
+
+      -webkit-backdrop-filter:
+        blur(18px);
+
+      border-bottom:
+        1px solid rgba(21, 48, 74, .06);
+    }
+
+
+    .nav-link {
+      position: relative;
+
+      color:
+        rgba(21, 48, 74, .62);
+
+      transition:
+        color .2s ease;
+    }
+
+
+    .nav-link:hover {
+      color: var(--blue);
+    }
+
+
+    .nav-contact {
+      padding:
+        10px 18px;
+
+      border-radius: 999px;
+
+      background:
+        linear-gradient(
+          135deg,
+          #1597d5,
+          #6673e8
+        );
+
+      color: #ffffff;
+
+      font-size: .78rem;
+
+      transition:
+        transform .2s ease;
+    }
+
+
+    .nav-contact:hover {
+      transform:
+        translateY(-1px);
+    }
+
+
+
+    /* =====================================================
+       HERO
+    ===================================================== */
+
+    .hero {
+      position: relative;
+
+      overflow: hidden;
+
+      background:
+        linear-gradient(
+          135deg,
+          #fbfeff 0%,
+          #f2fbff 54%,
+          #faf8ff 100%
+        );
+    }
+
+
+    .hero::before {
+      content: "";
+
+      position: absolute;
+
+      width: 480px;
+      height: 480px;
+
+      top: -260px;
+      right: -190px;
+
+      border-radius: 50%;
+
+      background:
+        rgba(116, 103, 238, .10);
+
+      filter:
+        blur(65px);
+
+      pointer-events: none;
+    }
+
+
+    .hero::after {
+      content: "";
+
+      position: absolute;
+
+      width: 400px;
+      height: 400px;
+
+      left: -230px;
+      bottom: -250px;
+
+      border-radius: 50%;
+
+      background:
+        rgba(69, 200, 238, .12);
+
+      filter:
+        blur(65px);
+
+      pointer-events: none;
+    }
+
+
+    .hero-container {
+      position: relative;
+      z-index: 2;
+
+      width:
+        min(1180px, 100%);
+
+      min-height:
+        760px;
+
+      margin: 0 auto;
+
+      display: grid;
+
+      grid-template-columns:
+        minmax(0, 1fr)
+        280px;
+
+      align-items: center;
+
+      gap: 95px;
+
+      padding:
+        145px 32px 80px;
+    }
+
+
+    .hero-copy {
+      max-width: 720px;
+    }
+
+
+    .hero-kicker {
+      display: flex;
+
+      align-items: center;
+
+      gap: 12px;
+
+      color: var(--blue);
+
+      font-size: .66rem;
+      font-weight: 750;
+
+      letter-spacing: .16em;
+
+      text-transform: uppercase;
+    }
+
+
+    .hero-kicker::before {
+      content: "";
+
+      width: 32px;
+      height: 1px;
+
+      background: var(--blue);
+    }
+
+
+    .hero-title {
+      max-width: 720px;
+
+      margin-top: 26px;
+
+      color: var(--ink);
+
+      font-size:
+        clamp(3.4rem, 5.8vw, 5.8rem);
+
+      font-weight: 730;
+
+      line-height: .96;
+
+      letter-spacing: -.058em;
+    }
+
+
+    .hero-title span {
+      color: #6879dd;
+
+      font-weight: 600;
+    }
+
+
+    .hero-description {
+      max-width: 620px;
+
+      margin-top: 28px;
+
+      color: var(--muted);
+
+      font-size: 1rem;
+
+      line-height: 1.8;
+    }
+
+
+    .hero-actions {
+      margin-top: 30px;
+
+      display: flex;
+
+      flex-wrap: wrap;
+
+      gap: 10px;
+    }
+
+
+    .btn-primary {
+      display: inline-flex;
+
+      align-items: center;
+      justify-content: center;
+
+      gap: 8px;
+
+      padding:
+        12px 18px;
+
+      border: 0;
+
+      border-radius: 999px;
+
+      background:
+        linear-gradient(
+          135deg,
+          #1597d5,
+          #6572e7
+        );
+
+      color: #ffffff;
+
+      font-size: .76rem;
+      font-weight: 700;
+
+      box-shadow:
+        0 10px 25px rgba(74, 118, 210, .16);
+
+      transition:
+        transform .2s ease;
+    }
+
+
+    .btn-primary:hover {
+      transform:
+        translateY(-2px);
+    }
+
+
+    .btn-secondary {
+      display: inline-flex;
+
+      align-items: center;
+      justify-content: center;
+
+      padding:
+        12px 18px;
+
+      border:
+        1px solid rgba(21, 48, 74, .10);
+
+      border-radius: 999px;
+
+      background:
+        rgba(255,255,255,.78);
+
+      color: var(--ink);
+
+      font-size: .76rem;
+      font-weight: 700;
+
+      transition:
+        transform .2s ease,
+        background .2s ease;
+    }
+
+
+    .btn-secondary:hover {
+      transform:
+        translateY(-2px);
+
+      background: #ffffff;
+    }
+
+
+
+    /* =====================================================
+       HERO LATERAL
+    ===================================================== */
+
+    .hero-aside {
+      position: relative;
+
+      padding-left: 27px;
+
+      border-left:
+        1px solid rgba(21,48,74,.10);
+    }
+
+
+    .hero-aside-label {
+      color: #9aa8b0;
+
+      font-size: .61rem;
+      font-weight: 750;
+
+      letter-spacing: .16em;
+
+      text-transform: uppercase;
+    }
+
+
+    .hero-aside-block {
+      padding:
+        22px 0;
+
+      border-bottom:
+        1px solid rgba(21,48,74,.07);
+    }
+
+
+    .hero-aside-block:last-child {
+      border-bottom: 0;
+    }
+
+
+    .hero-aside-block strong {
+      display: block;
+
+      color: var(--ink);
+
+      font-size: .88rem;
+      font-weight: 700;
+    }
+
+
+    .hero-aside-block span {
+      display: block;
+
+      margin-top: 6px;
+
+      color: #8797a1;
+
+      font-size: .73rem;
+
+      line-height: 1.55;
+    }
+
+
+
+    /* =====================================================
+       HERO INFERIOR
+    ===================================================== */
+
+    .hero-bottom {
+      position: relative;
+      z-index: 3;
+
+      border-top:
+        1px solid rgba(21,48,74,.06);
+
+      background:
+        rgba(255,255,255,.55);
+    }
+
+
+    .hero-bottom-inner {
+      width:
+        min(1180px, 100%);
+
+      margin: 0 auto;
+
+      padding:
+        19px 32px;
+
+      display: flex;
+
+      align-items: center;
+      justify-content: space-between;
+
+      gap: 30px;
+
+      color: #83949e;
+
+      font-size: .7rem;
+      font-weight: 600;
+    }
+
+
+    .hero-bottom-services {
+      display: flex;
+
+      flex-wrap: wrap;
+
+      gap: 24px;
+    }
+
+
+    .hero-bottom-dot {
+      width: 5px;
+      height: 5px;
+
+      display: inline-block;
+
+      margin-right: 8px;
+
+      border-radius: 50%;
+
+      background: var(--blue);
+    }
+
+
+
+    /* =====================================================
+       TÍTULOS DAS SECÇÕES
+    ===================================================== */
+
+    .section-main-title {
+      margin: 0;
+
+      max-width: 470px;
+
+      color: var(--blue);
+
+      font-size:
+        clamp(2.4rem, 3.7vw, 3.7rem);
+
+      font-weight: 700;
+
+      line-height: 1.05;
+
+      letter-spacing: -.045em;
+    }
+
+
+    .section-main-title-light {
+      color: #8eddef;
+    }
+
+
+    .section-rule {
+      width: 42px;
+      height: 2px;
+
+      margin-top: 23px;
+
+      border-radius: 999px;
+
+      background:
+        linear-gradient(
+          90deg,
+          var(--blue),
+          var(--violet)
+        );
+    }
+
+
+    .section-rule-light {
+      background:
+        linear-gradient(
+          90deg,
+          #7adcf0,
+          #b7afff
+        );
+    }
+
+
+
+    /* =====================================================
+       CONTEÚDO GERAL
+    ===================================================== */
+
+    .section-soft {
+      background:
+        radial-gradient(
+          circle at 12% 30%,
+          rgba(69,200,238,.09),
+          transparent 25%
+        ),
+        radial-gradient(
+          circle at 88% 70%,
+          rgba(116,103,238,.07),
+          transparent 24%
+        ),
+        #f7fcff;
+    }
+
+
+    .reading-text {
+      max-width: 790px;
+
+      color: var(--muted);
+
+      font-size: 1.02rem;
+
+      line-height: 1.9;
+    }
+
+
+    .reading-text p + p {
+      margin-top: 27px;
+    }
+
+
+
+    /* =====================================================
+       PSICOTERAPIA
+    ===================================================== */
+
+    .therapy-feature {
+      margin:
+        42px 0;
+
+      padding:
+        30px 32px;
+
+      border-left:
+        3px solid var(--blue);
+
+      background:
+        linear-gradient(
+          135deg,
+          #f1fbff,
+          #f7f4ff
+        );
+    }
+
+
+    .therapy-feature-label {
+      color: var(--blue);
+
+      font-size: .67rem;
+      font-weight: 750;
+
+      letter-spacing: .15em;
+
+      text-transform: uppercase;
+    }
+
+
+    .therapy-feature p {
+      margin-top: 15px;
+
+      color: var(--ink);
+
+      font-size: 1.08rem;
+
+      line-height: 1.8;
+    }
+
+
+
+    /* =====================================================
+       SUPERVISÃO
+    ===================================================== */
+
+    .supervision {
+      position: relative;
+
+      overflow: hidden;
+
+      background:
+        linear-gradient(
+          145deg,
+          #173a5b 0%,
+          #294d80 55%,
+          #4a5897 100%
+        );
+    }
+
+
+    .supervision-copy {
+      max-width: 790px;
+
+      color:
+        rgba(255,255,255,.74);
+
+      font-size: 1.02rem;
+
+      line-height: 1.9;
+    }
+
+
+    .supervision-copy p + p {
+      margin-top: 27px;
+    }
+
+
+    .supervision-copy p:first-child {
+      color:
+        rgba(255,255,255,.90);
+    }
+
+
+
+    /* =====================================================
+       FORMAÇÃO
+    ===================================================== */
+
+    .formation-profile {
+      display: grid;
+
+      grid-template-columns:
+        135px
+        minmax(0, 1fr);
+
+      align-items: center;
+
+      gap: 36px;
+
+      padding-bottom: 44px;
+
+      border-bottom:
+        1px solid var(--line);
+    }
+
+
+    .formation-photo-wrap {
+      position: relative;
+
+      width: 125px;
+    }
+
+
+    .formation-photo-wrap::before {
+      content: "";
+
+      position: absolute;
+
+      top: -9px;
+      right: -9px;
+
+      width: 100%;
+      height: 100%;
+
+      border:
+        1px solid rgba(116,103,238,.14);
+
+      border-radius: 18px;
+
+      background:
+        linear-gradient(
+          145deg,
+          rgba(157,233,225,.22),
+          rgba(232,229,255,.4)
+        );
+    }
+
+
+    .formation-photo {
+      position: relative;
+
+      z-index: 2;
+
+      display: block;
+
+      width: 100%;
+
+      aspect-ratio: 4 / 5;
+
+      object-fit: cover;
+
+      border-radius: 17px;
+
+      box-shadow:
+        var(--shadow-sm);
+    }
+
+
+    .formation-profile-copy {
+      max-width: 680px;
+
+      color: var(--muted);
+
+      font-size: 1.02rem;
+
+      line-height: 1.9;
+    }
+
+
+    .formation-profile-copy p + p {
+      margin-top: 20px;
+    }
+
+
+    .formation-text-section {
+      margin-top: 42px;
+
+      padding-top: 38px;
+
+      border-top:
+        1px solid var(--line);
+    }
+
+
+    .formation-subtitle {
+      color: var(--blue);
+
+      font-size: 1.45rem;
+      font-weight: 700;
+
+      letter-spacing: -.03em;
+    }
+
+
+    .formation-prose {
+      max-width: 780px;
+
+      margin-top: 20px;
+
+      color: var(--muted);
+
+      font-size: 1.01rem;
+
+      line-height: 1.9;
+    }
+
+
+    .formation-prose p {
+      margin: 0;
+    }
+
+
+    .formation-prose p + p {
+      margin-top: 15px;
+    }
+
+
+    .principles {
+      margin-top: 45px;
+
+      padding:
+        28px 30px;
+
+      border:
+        1px solid rgba(21,151,213,.10);
+
+      border-radius: 22px;
+
+      background:
+        linear-gradient(
+          135deg,
+          #effbff,
+          #f7f4ff
+        );
+    }
+
+
+    .principles p {
+      margin-top: 14px;
+
+      color: var(--muted);
+
+      font-size: 1.02rem;
+
+      line-height: 1.8;
+    }
+
+
+
+    /* =====================================================
+       CONTACTO
+    ===================================================== */
+
+    .eyebrow {
+      color: var(--blue);
+
+      font-size: .68rem;
+      font-weight: 750;
+
+      letter-spacing: .15em;
+
+      text-transform: uppercase;
+    }
+
+
+    .contact-panel {
+      padding: 34px;
+
+      border:
+        1px solid rgba(21,48,74,.08);
+
+      border-radius: 24px;
+
+      background:
+        linear-gradient(
+          145deg,
+          #ffffff,
+          #f7fcff
+        );
+
+      box-shadow:
+        var(--shadow-sm);
+    }
+
+
+    .contact-form-title {
+      color: var(--blue);
+
+      font-size: 1.7rem;
+      font-weight: 700;
+
+      letter-spacing: -.035em;
+    }
+
+
+    .field {
+      width: 100%;
+
+      padding:
+        13px 14px;
+
+      border:
+        1px solid rgba(21,48,74,.10);
+
+      border-radius: 13px;
+
+      background: #f5fbfe;
+
+      outline: none;
+    }
+
+
+    .field:focus {
+      border-color:
+        rgba(21,151,213,.55);
+
+      box-shadow:
+        0 0 0 4px rgba(21,151,213,.08);
+    }
+
+
+    .feature-icon {
+      width: 44px;
+      height: 44px;
+
+      display: inline-flex;
+
+      align-items: center;
+      justify-content: center;
+
+      border-radius: 14px;
+
+      background:
+        linear-gradient(
+          145deg,
+          #dcf8ff,
+          #e7e2ff
+        );
+
+      color: #5276e8;
+    }
+
+
+
+    /* =====================================================
+       FOOTER
+    ===================================================== */
+
+    .footer {
+      background:
+        linear-gradient(
+          145deg,
+          #102f49,
+          #1d4265 54%,
+          #334b88
+        );
+    }
+
+
+    .footer-link {
+      color:
+        rgba(255,255,255,.67);
+
+      transition:
+        color .2s ease;
+    }
+
+
+    .footer-link:hover {
+      color: #ffffff;
+    }
+
+
+    .footer-legal {
+      border-top:
+        1px solid rgba(255,255,255,.11);
+    }
+
+
+
+    /* =====================================================
+       MODAIS
+    ===================================================== */
+
+    .legal-modal {
+      position: fixed;
+
+      inset: 0;
+
+      z-index: 100;
+
+      display: none;
+
+      align-items: center;
+      justify-content: center;
+
+      padding: 1rem;
+
+      background:
+        rgba(10,28,45,.62);
+
+      backdrop-filter:
+        blur(8px);
+
+      -webkit-backdrop-filter:
+        blur(8px);
+    }
+
+
+    .legal-modal.is-open {
+      display: flex;
+    }
+
+
+    .legal-dialog {
+      width:
+        min(920px,100%);
+
+      max-height:
+        86vh;
+
+      overflow: auto;
+
+      border-radius: 24px;
+
+      background: #ffffff;
+
+      box-shadow:
+        0 30px 100px rgba(10,28,45,.25);
+    }
+
+
+    .legal-dialog h2,
+    .legal-dialog h3 {
+      color: var(--ink);
+    }
+
+
+    .legal-dialog h3 {
+      margin-top: 1.5rem;
+
+      font-size: 1.05rem;
+      font-weight: 750;
+    }
+
+
+    .legal-dialog p,
+    .legal-dialog li {
+      color: var(--muted);
+
+      line-height: 1.75;
+    }
+
+
+    .legal-dialog ul {
+      padding-left: 1.2rem;
+
+      list-style: disc;
+    }
+
+
+    .legal-close {
+      width: 40px;
+      height: 40px;
+
+      border: 0;
+
+      border-radius: 12px;
+
+      display: flex;
+
+      align-items: center;
+      justify-content: center;
+
+      background: #f1f8fc;
+
+      cursor: pointer;
+    }
+
+
+    .legal-note {
+      border-left:
+        3px solid var(--blue);
+
+      background: #f1faff;
+    }
+
+
+
+    /* =====================================================
+       RESPONSIVO
+    ===================================================== */
+
+    @media (max-width: 900px) {
+
+      .hero-container {
+        min-height: auto;
+
+        grid-template-columns: 1fr;
+
+        gap: 55px;
+
+        padding:
+          135px 28px 70px;
+      }
+
+
+      .hero-aside {
+        max-width: 600px;
+      }
+
+    }
+
+
+    @media (max-width: 640px) {
+
+      .navbar-brand {
+        font-size: 1.15rem !important;
+
+        line-height: 1.05;
+      }
+
+
+      .hero-container {
+        padding:
+          115px 20px 60px;
+      }
+
+
+      .hero-title {
+        font-size:
+          clamp(3rem, 14vw, 4.4rem);
+      }
+
+
+      .hero-aside {
+        padding-left: 20px;
+      }
+
+
+      .hero-bottom-inner {
+        padding:
+          17px 20px;
+
+        align-items: flex-start;
+
+        flex-direction: column;
+
+        gap: 12px;
+      }
+
+
+      .hero-bottom-services {
+        gap: 12px 18px;
+      }
+
+
+      .section-main-title {
+        font-size:
+          clamp(2.25rem, 10vw, 3.2rem);
+      }
+
+
+      .formation-profile {
+        grid-template-columns: 1fr;
+
+        gap: 26px;
+      }
+
+
+      .formation-photo-wrap {
+        width: 115px;
+      }
+
+
+      .contact-panel {
+        padding: 25px 21px;
+      }
+
+    }
+
+
+    @media (prefers-reduced-motion: reduce) {
+
+      html {
+        scroll-behavior: auto;
+      }
+
+
+      * {
+        transition: none !important;
+      }
+
+    }
+
+  </style>
+
+</head>
+
+
+<body class="antialiased">
+
+
+  <!-- =====================================================
+       NAVBAR
+  ====================================================== -->
+
+  <header class="fixed inset-x-0 top-0 z-50">
+
+    <div class="nav-blur">
+
+      <div
+        class="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 sm:px-8"
+      >
+
+        <a
+          href="#inicio"
+          class="flex items-center gap-3"
+          aria-label="Paula Peres Di Salvatore"
+        >
+
+          <h1
+            class="navbar-brand display max-w-4xl text-[1.5rem] font-extrabold tracking-[-0.04em] sm:text-[1.6rem] lg:text-[2.35rem]"
+          >
+            <span class="gradient-text">
+              Clínica Paula Peres Di Salvatore
+            </span>
+          </h1>
+
+        </a>
+
+
+        <nav
+          class="hidden items-center gap-7 text-sm font-semibold md:flex"
+        >
+
+          <a
+            class="nav-link"
+            href="#abordagem"
+          >
+            Psicoterapia
+          </a>
+
+
+          <a
+            class="nav-link"
+            href="#supervisao"
+          >
+            Supervisão
+          </a>
+
+
+          <a
+            class="nav-link"
+            href="#formacao"
+          >
+            Formação
+          </a>
+
+
+          <a
+            class="nav-link"
+            href="#contactos"
+          >
+            Contacto
+          </a>
+
+        </nav>
+
+
+        <button
+          id="mobile-menu-button"
+          class="rounded-xl border border-slate-200 bg-white p-2.5 text-slate-700 md:hidden"
+          aria-label="Abrir menu"
+          aria-expanded="false"
+        >
+          <i
+            data-lucide="menu"
+            class="h-5 w-5"
+          ></i>
+        </button>
+
+      </div>
+
+
+      <div
+        id="mobile-menu"
+        class="hidden border-t border-slate-200/80 bg-white/95 md:hidden"
+      >
+
+        <nav class="px-5 py-3">
+
+          <a
+            href="#abordagem"
+            class="block border-b border-slate-100 py-3 text-sm font-semibold text-slate-700"
+          >
+            Psicologia Clínica e Psicoterapia
+          </a>
+
+
+          <a
+            href="#supervisao"
+            class="block border-b border-slate-100 py-3 text-sm font-semibold text-slate-700"
+          >
+            Supervisão Clínica
+          </a>
+
+
+          <a
+            href="#formacao"
+            class="block border-b border-slate-100 py-3 text-sm font-semibold text-slate-700"
+          >
+            Formação
+          </a>
+
+
+          <a
+            href="#contactos"
+            class="block py-3 text-sm font-semibold text-slate-700"
+          >
+            Contacto
+          </a>
+
+        </nav>
+
+      </div>
+
+    </div>
+
+  </header>
+
+
+
+  <main id="inicio">
+
+
+    <!-- =====================================================
+         HERO
+    ====================================================== -->
+
+    <section class="hero">
+
+      <div class="hero-container">
+
+
+        <div class="hero-copy">
+
+          <h1 class="hero-title">
+
+            Um espaço para compreender,
+
+            <span>
+              escutar e transformar.
+            </span>
+
+          </h1>
+
+
+          <p class="hero-description">
+            Psicologia Clínica, Psicoterapia e Supervisão Clínica com uma prática assente no rigor científico, na escuta e no humanismo.
+          </p>
+
+
+          <div class="hero-actions">
+
+            <a
+              href="#abordagem"
+              class="btn-primary"
+            >
+              Psicologia e Psicoterapia
+
+              <i
+                data-lucide="arrow-down-right"
+                class="h-4 w-4"
+              ></i>
+            </a>
+
+
+            <a
+              href="#contactos"
+              class="btn-secondary"
+            >
+              Contacto
+            </a>
+
+          </div>
+
+        </div>
+
+
+
+        <aside class="hero-aside">
+
+          <p class="hero-aside-label">
+            Prática clínica
+          </p>
+
+
+          <div class="hero-aside-block">
+
+            <strong>
+              Psicologia Clínica
+            </strong>
+
+            <span>
+              Compreensão das dificuldades, emoções e relações.
+            </span>
+
+          </div>
+
+
+          <div class="hero-aside-block">
+
+            <strong>
+              Psicoterapia
+            </strong>
+
+            <span>
+              Escuta, reflexão e autoconhecimento.
+            </span>
+
+          </div>
+
+
+          <div class="hero-aside-block">
+
+            <strong>
+              Supervisão Clínica
+            </strong>
+
+            <span>
+              Orientação e desenvolvimento profissional.
+            </span>
+
+          </div>
+
+        </aside>
+
+      </div>
+
+
+
+      <div class="hero-bottom">
+
+        <div class="hero-bottom-inner">
+
+          <div class="hero-bottom-services">
+
+            <span>
+              <i class="hero-bottom-dot"></i>
+              +20 anos de experiência
+            </span>
+
+
+            <span>
+              <i class="hero-bottom-dot"></i>
+              Lisboa
+            </span>
+
+
+            <span>
+              <i class="hero-bottom-dot"></i>
+              Presencial e online
+            </span>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         PSICOLOGIA CLÍNICA E PSICOTERAPIA
+    ====================================================== -->
+
+    <section
+      id="abordagem"
+      class="bg-white py-20 sm:py-24 lg:py-28"
+    >
+
+      <div
+        class="mx-auto max-w-7xl px-5 sm:px-8"
+      >
+
+        <div
+          class="grid gap-12 lg:grid-cols-[.62fr_1.38fr] lg:gap-20"
+        >
+
+          <div>
+
+            <h2 class="section-main-title">
+              Psicologia Clínica e Psicoterapia
+            </h2>
+
+            <div class="section-rule"></div>
+
+          </div>
+
+
+          <div class="reading-text">
+
+            <p>
+              A Psicologia Clínica e Psicoterapia consistem em formas de intervenções terapêuticas que favorecem a Saúde Mental, o desenvolvimento saudável da vida psíquica e emocional, permitindo vivências mais harmoniosas e promotoras de um crescente bem-estar.
+            </p>
+
+
+            <p>
+              A proposta terapêutica consiste em ajudar o paciente a falar sobre si e a partir deste diálogo entrar em contato com conteúdos que fogem à sua compreensão, mas que influenciam sua forma de agir, pensar e sentir. A pessoa é convidada, com o auxílio do psicólogo, a reflectir e a analisar a realidade, as emoções, os pensamentos, as fantasias e os sonhos. É através da escuta e do diálogo centrado no funcionamento pessoal e relacional que as intervenções psicológicas e terapêuticas ajudam os pacientes a tornarem-se mais conscientes de si, dos seus pensamentos, dos seus sentimentos e das suas escolhas. Através deste processo transforma-se o sofrimento e emergem novas perspectivas sobre o Eu, sobre a qualidade das suas relações intrapsíquicas e interpessoais.
+            </p>
+
+
+            <div class="therapy-feature">
+
+              <span class="therapy-feature-label">
+                Psicoterapia de inspiração psicanalítica
+              </span>
+
+
+              <p>
+                As consultas de psicoterapia de inspiração psicanalítica têm como objectivo terapêutico o auto-conhecimento, a diminuição  do sofrimento, a transformação pessoal, sobretudo através da compreensão dos aspectos inconscientes que operam nos conflitos e nos sintomas. Traduzem uma via de acesso ao funcionamento mental enquanto forma de alcançar a compreensão da sintomatologia psíquica, a redução de angústias impeditivas,  sendo  promotoras de sentidos para a vida.
+              </p>
+
+            </div>
+
+
+            <p>
+              Através de uma relação terapêutica empática a pessoa tem a capacidade de reflectir sobre o passado, de modo a compreender o presente e a desenvolver capacidades que permitam construir um futuro mais livre, feliz e aprazível.
+            </p>
+
+
+            <p>
+              O processo terapêutico decorre através de sessões regulares focadas em experiências cruciais que influenciam a personalidade, as vivências, os relacionamentos, proporcionando ao paciente uma vida com maior confiança, autonomia e liberdade.
+            </p>
+
+
+            <p>
+              A consulta clínica tem por objectivo analisar as dificuldades dos pacientes, através da compreensão dos problemas e insatisfações, que influenciam todo o relacionamento interpessoal, bem como as expectativas e a imagem que cada pessoa tem de si, das suas vivências e dos seus actos. Na prática materializa-se numa intervenção técnica orientada para os resultados, respeitando os valores da pessoa humana.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         SUPERVISÃO CLÍNICA
+    ====================================================== -->
+
+    <section
+      id="supervisao"
+      class="supervision py-20 text-white sm:py-24 lg:py-28"
+    >
+
+      <div
+        class="mx-auto max-w-7xl px-5 sm:px-8"
+      >
+
+        <div
+          class="grid gap-12 lg:grid-cols-[.62fr_1.38fr] lg:gap-20"
+        >
+
+          <div>
+
+            <h2
+              class="section-main-title section-main-title-light"
+            >
+              Supervisão Clínica
+            </h2>
+
+            <div
+              class="section-rule section-rule-light"
+            ></div>
+
+          </div>
+
+
+          <div class="supervision-copy">
+
+            <p>
+              A supervisão clínica é uma competência de orientação e formação profissional que inclui capacidades e conhecimentos específicos, na qual um Psicólogo Supervisor Sénior proporciona supervisão clínica a um Psicólogo Supervisando, com o objectivo de refletir sobre sua prática clínica, compreender a dinâmica psicológica do paciente, explorar a transferência na relação terapêutica, melhorar o manejo da técnica e a sua compreensão teórica.
+            </p>
+
+
+            <p>
+              A supervisão dos estágios académicos e profissionais  é um aspecto fundamental da formação em Psicologia e é necessária para a obtenção da certificação profissional. Ajuda a garantir que os psicólogos em formação desenvolvem as capacidades necessárias para a prática ética e eficaz, aprofundando o seu conhecimento teórico e prático.
+            </p>
+
+
+            <p>
+              A prioridade das supervisões centra-se na qualidade dos cuidados de saúde mental prestados aos paciente e ao desenvolvimento profissional. As Supervisões podem ser individuais ou em pequenos grupos.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         FORMAÇÃO E PERCURSO
+    ====================================================== -->
+
+    <section
+      id="formacao"
+      class="section-soft py-20 sm:py-24 lg:py-28"
+    >
+
+      <div
+        class="mx-auto max-w-7xl px-5 sm:px-8"
+      >
+
+        <div
+          class="grid gap-12 lg:grid-cols-[.62fr_1.38fr] lg:gap-20"
+        >
+
+          <div>
+
+            <h2 class="section-main-title">
+              Formação e percurso
+            </h2>
+
+            <div class="section-rule"></div>
+
+          </div>
+
+
+          <div>
+
+
+            <div class="formation-profile">
+
+              <div class="formation-photo-wrap">
+
+                <img
+                  src="./PerfilFoto.jpg"
+                  alt="Paula Peres Di Salvatore"
+                  class="formation-photo"
+                />
+
+              </div>
+
+
+              <div class="formation-profile-copy">
+
+                <p>
+                  experiência de mais de 20 anos em Psicologia Clínica e Psicoterapias.
+                </p>
+
+
+                <p>
+                  Exerceu no sector Públicos e Privado. Leccionou enquanto docente do docente do Ensino Superior ao nível de Licenciatura e Pós-Graduação e exerceu cargos de Técnica Superiora de Psicologia.
+                </p>
+
+              </div>
+
+            </div>
+
+
+
+            <div class="formation-text-section">
+
+              <h3 class="formation-subtitle">
+                Formação académica
+              </h3>
+
+
+              <div class="formation-prose">
+
+                <p>
+                  Doutoranda em Psicologia, na especialidade de Clínica: Instituto Superior de Psicologia Aplicada, Lisboa.
+                </p>
+
+
+                <p>
+                  Mestrado em Psicologia Psicanalítica: Tavistock and Portman, NHS Trust, Londres.
+                </p>
+
+
+                <p>
+                  Licenciatura em Psicologia Aplicada, área Clínica: Instituto Superior de Psicologia Aplicada, Lisboa.
+                </p>
+
+              </div>
+
+            </div>
+
+
+
+            <div class="formation-text-section">
+
+              <h3 class="formation-subtitle">
+                Reconhecimento profissional
+              </h3>
+
+
+              <div class="formation-prose">
+
+                <p>
+                  Membro Efetivo da Ordem dos Psicólogos Portugueses (OPP), Cédula Profissional Nº 11626.
+                </p>
+
+
+                <p>
+                  Psicóloga detentora da Especialidade Avançada em Psicologia Clínica e da Saúde (OPP).
+                </p>
+
+
+                <p>
+                  Psicóloga detentora da Especialidade Avançada em Psicologia Educacional (OPP).
+                </p>
+
+
+                <p>
+                  Psicóloga Supervisora (OPP).
+                </p>
+
+
+                <p>
+                  Membro candidato da PsiRelacional - Associação de Psicanálise Relacional.
+                </p>
+
+
+                <p>
+                  Membro da Sociedade Portuguesa de Psicossomática.
+                </p>
+
+
+                <p>
+                  Membro Graduado da British Psychological Society.
+                </p>
+
+
+                <p>
+                  Membro Efectivo da Tavistock Society of Psychotherapists and Allied Professionals.
+                </p>
+
+
+                <p>
+                  Membro da European Federation of Psychologists Associations.
+                </p>
+
+              </div>
+
+            </div>
+
+
+
+            <div class="principles">
+
+              <h3 class="formation-subtitle">
+                Princípios
+              </h3>
+
+
+              <p>
+                Os meus princípios pessoais baseiam-se no rigor científico, no conhecimento teórico-prático, na competência, na integridade e no Humanismo.
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         CONTACTO
+    ====================================================== -->
+
+    <section
+      id="contactos"
+      class="bg-white py-20 sm:py-24 lg:py-28"
+    >
+
+      <div
+        class="mx-auto max-w-7xl px-5 sm:px-8"
+      >
+
+
+        <!-- TÍTULO CENTRALIZADO -->
+
+        <div class="mb-14 text-center">
+
+          <h2 class="section-main-title mx-auto">
+            Contacto
+          </h2>
+
+          <div class="section-rule mx-auto"></div>
+
+        </div>
+
+
+
+        <div
+          class="grid gap-10 lg:grid-cols-[1.08fr_.92fr]"
+        >
+
+
+          <div>
+
+            <div
+              class="max-w-3xl space-y-6 text-[1.02rem] leading-8 text-[var(--muted)]"
+            >
+
+              <p>
+                Contacte-me para uma marcação ou primeira consulta. Numa primeira consulta procuram-se avaliar e compreender os temas mais preocupante para o paciente e organizam-se os objectivos terapêuticos. É abordada a natureza das dificuldades, o que será mais indicado em termos de intervenção, e qual o âmbito do acompanhamento clínico.
+              </p>
+
+
+              <p>
+                As sessões são regulares e cada uma tem a duração de 50 minutos. A frequência das sessões, o horário e o pagamento das são acordados previamente entre o paciente e o psicólogo, estas podem realizar-se presencialmente ou on-line. As consultas são em português, para além das opções de inglês, italiano ou castelhano.
+              </p>
+
+
+              <p>
+                As consultas são enquadradas pelo código de ética profissional que preserva uma rigorosa confidencialidade e que respeita os valores e a autonomia individual. A autenticidade, a imparcialidade e a integridade do profissional são condições indispensáveis ao trabalho clínico, no sentido de se obterem os melhores resultados para cada paciente.
+              </p>
+
+            </div>
+
+
+
+            <div
+              class="mt-10 grid gap-6 border-y border-slate-200/80 py-6 sm:grid-cols-2"
+            >
+
+              <div>
+
+                <p class="eyebrow">
+                  Onde encontrar
+                </p>
+                <br>
+                <p
+                  class="mt-2 text-sm leading-6 text-[var(--muted)]"
+                >
+                  Avenida António Serpa 32, 2ºA 1050-027 Lisboa
+                </p>
+
+              </div>
+
+
+              <div
+                class="sm:border-l sm:border-slate-200 sm:pl-6"
+              >
+
+                <p class="eyebrow">
+                  Contacto direto
+                </p>
+
+
+                <div
+  class="mt-4 space-y-3 text-sm font-semibold text-[var(--ink)]"
+>
+
+  <a
+    class="flex items-center gap-2.5 transition hover:text-cyan-600"
+    href="https://api.whatsapp.com/send?phone=351910724621"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <i
+      data-lucide="message-circle"
+      class="h-4 w-4 text-cyan-500"
+    ></i>
+
+    <span>
+      WhatsApp
+    </span>
+  </a>
+
+
+  <a
+    class="flex items-center gap-2.5 transition hover:text-violet-600"
+    href="mailto:clinicapaulasite@gmail.com"
+  >
+    <i
+      data-lucide="mail"
+      class="h-4 w-4 text-violet-500"
+    ></i>
+
+    <span>
+      clinicapaulasite@gmail.com
+    </span>
+  </a>
+
+</div>
+
+              </div>
+
+            </div>
+
+
+
+            <div
+              class="mt-7 flex min-h-[240px] flex-col items-center justify-center rounded-2xl border border-slate-200/70 bg-gradient-to-br from-sky-50 via-white to-violet-50 p-8 text-center"
+            >
+
+              <span class="feature-icon">
+
+                <i
+                  data-lucide="map-pin"
+                  class="h-5 w-5"
+                ></i>
+
+              </span>
+
+
+              <h3
+                class="mt-5 text-xl font-bold text-[var(--blue)]"
+              >
+                Avenida António Serpa 32
+              </h3>
+
+
+              <p
+                class="mt-2 text-sm text-[var(--muted)]"
+              >
+                2ºA · 1050-027 Lisboa
+              </p>
+
+
+              <a
+                href="https://www.google.com/maps/search/?api=1&query=Avenida%20Ant%C3%B3nio%20Serpa%2032%2C%201050-027%20Lisboa"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn-secondary mt-5"
+              >
+                Abrir no Google Maps
+              </a>
+
+            </div>
+
+          </div>
+
+
+
+          <!-- FORMULÁRIO -->
+
+          <div
+            class="contact-panel lg:sticky lg:top-28"
+          >
+
+            <h3 class="contact-form-title">
+              Mensagem
+            </h3>
+
+
+            <form
+              action="https://formsubmit.co/clinicapaulasite@gmail.com"
+              method="POST"
+              class="mt-7 space-y-5"
+            >
+
+              <input
+                type="hidden"
+                name="_subject"
+                value="Nova mensagem pelo site da Paula Peres Di Salvatore"
+              />
+
+
+              <input
+                type="hidden"
+                name="_captcha"
+                value="false"
+              />
+
+
+              <div>
+
+                <label
+                  for="nome"
+                  class="mb-2 block text-sm font-semibold"
+                >
+                  Nome
+                </label>
+
+
+                <input
+                  id="nome"
+                  name="nome"
+                  type="text"
+                  autocomplete="name"
+                  required
+                  class="field"
+                  placeholder="O seu nome"
+                />
+
+              </div>
+
+
+              <div>
+
+                <label
+                  for="email"
+                  class="mb-2 block text-sm font-semibold"
+                >
+                  Email
+                </label>
+
+
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  autocomplete="email"
+                  required
+                  class="field"
+                  placeholder="nome@email.com"
+                />
+
+              </div>
+
+
+              <div>
+
+                <label
+                  for="mensagem"
+                  class="mb-2 block text-sm font-semibold"
+                >
+                  Mensagem
+                </label>
+
+
+                <textarea
+                  id="mensagem"
+                  name="mensagem"
+                  rows="6"
+                  required
+                  class="field"
+                  placeholder="Escreva brevemente o motivo do contacto..."
+                ></textarea>
+
+              </div>
+
+
+              <button
+                type="submit"
+                class="btn-primary w-full"
+              >
+                Enviar mensagem
+
+                <i
+                  data-lucide="arrow-right"
+                  class="h-4 w-4"
+                ></i>
+              </button>
+
+
+              <p
+                class="text-xs leading-5 text-slate-400"
+              >
+                Os dados introduzidos neste formulário (nome, email e mensagem) destinam-se exclusivamente à gestão e resposta ao seu pedido de contacto.
+
+                Evite incluir informação clínica ou outros dados de saúde neste primeiro contacto.
+
+                Consulte a
+
+                <button
+                  type="button"
+                  data-modal-open="modal-privacidade"
+                  class="font-semibold underline"
+                >
+                  Política de Privacidade
+                </button>.
+              </p>
+
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+
+  <!-- =====================================================
+       FOOTER
+  ====================================================== -->
+
+  <footer
+    class="footer py-14 text-white"
+  >
+
+    <div
+      class="mx-auto max-w-7xl px-5 sm:px-8"
+    >
+
+      <div
+        class="grid gap-12 lg:grid-cols-[1.35fr_.8fr_.95fr]"
+      >
+
+        <div>
+
+          <p
+            class="text-2xl font-bold"
+          >
+            Paula Peres Di Salvatore
+          </p>
+
+
+          <p
+            class="mt-3 text-sm text-white/60"
+          >
+            Psicologia Clínica · Psicoterapia · Supervisão Clínica
+          </p>
+
+
+          <div
+            class="mt-6 space-y-2 text-sm text-white/65"
+          >
+
+            <p>
+              Avenida António Serpa 32, 2ºA · 1050-027 Lisboa
+            </p>
+
+
+            <a
+              class="footer-link block"
+              href="mailto:clinicapaulasite@gmail.com"
+            >
+              clinicapaulasite@gmail.com
+            </a>
+
+
+            <a
+              class="footer-link block"
+              href="https://api.whatsapp.com/send?phone=351910724621"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              WhatsApp
+            </a>
+
+          </div>
+
+        </div>
+
+
+
+        <div>
+
+          <p
+            class="text-xs font-bold uppercase tracking-[.16em] text-cyan-200"
+          >
+            Navegação
+          </p>
+
+
+          <div class="mt-5 space-y-3 text-sm">
+
+            <a
+              class="footer-link block"
+              href="#abordagem"
+            >
+              Psicoterapia
+            </a>
+
+
+            <a
+              class="footer-link block"
+              href="#supervisao"
+            >
+              Supervisão
+            </a>
+
+
+            <a
+              class="footer-link block"
+              href="#formacao"
+            >
+              Formação
+            </a>
+
+
+            <a
+              class="footer-link block"
+              href="#contactos"
+            >
+              Contacto
+            </a>
+
+          </div>
+
+        </div>
+
+
+
+        <div>
+
+          <p
+            class="text-xs font-bold uppercase tracking-[.16em] text-cyan-200"
+          >
+            Informação legal
+          </p>
+
+
+          <div class="mt-5 space-y-3 text-sm">
+
+            <button
+              type="button"
+              data-modal-open="modal-privacidade"
+              class="footer-link block"
+            >
+              Política de Privacidade
+            </button>
+
+
+            <button
+              type="button"
+              data-modal-open="modal-dados"
+              class="footer-link block"
+            >
+              Proteção de Dados
+            </button>
+
+
+            <button
+              type="button"
+              data-modal-open="modal-cookies"
+              class="footer-link block"
+            >
+              Política de Cookies
+            </button>
+
+           <!-- Livro de Reclamações
+              <a
+              class="footer-link block"
+              href="https://www.livroreclamacoes.pt/INICIO/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Livro de Reclamações
+            </a>
+            -->
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <div
+        class="footer-legal mt-12 flex flex-col gap-4 pt-6 text-xs text-white/45 sm:flex-row sm:justify-between"
+      >
+
+        <p>
+          © 2026 Paula Peres Di Salvatore. Todos os direitos reservados.
+        </p>
+
+
+        <a
+          href="#inicio"
+          class="footer-link"
+        >
+          Voltar ao topo ↑
+        </a>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+
+  <!-- =====================================================
+       POLÍTICA DE PRIVACIDADE
+  ====================================================== -->
+
+  <div
+    id="modal-privacidade"
+    class="legal-modal"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="modal-privacidade-title"
+  >
+
+    <div class="legal-dialog">
+
+      <div
+        class="sticky top-0 z-10 flex items-center justify-between border-b border-slate-200 bg-white/95 px-6 py-5 backdrop-blur sm:px-8"
+      >
+
+        <div>
+
+          <p class="eyebrow">
+            Informação legal
+          </p>
+
+
+          <h2
+            id="modal-privacidade-title"
+            class="mt-1 text-2xl font-bold"
+          >
+            Política de Privacidade
+          </h2>
+
+        </div>
+
+
+        <button
+          type="button"
+          data-modal-close
+          aria-label="Fechar"
+          class="legal-close"
+        >
+          <i
+            data-lucide="x"
+            class="h-5 w-5"
+          ></i>
+        </button>
+
+      </div>
+
+
+      <div
+        class="px-6 py-7 sm:px-8 sm:py-9"
+      >
+
+        <div
+          class="legal-note rounded-xl p-5"
+        >
+
+          <p>
+            Este website utiliza o formulário de contacto apenas para permitir que a clínica receba e responda aos pedidos enviados pelos utilizadores.
+          </p>
+
+        </div>
+
+
+        <h3>
+          1. Responsável pelo tratamento
+        </h3>
+
+
+        <p>
+          O responsável pelo tratamento dos dados recolhidos através deste website é <strong>Paula Peres Di Salvatore</strong>, com atividade profissional em Avenida António Serpa 32, 2ºA, 1050-027 Lisboa.
+        </p>
+
+
+        <p class="mt-3">
+          Email:
+          <a
+            href="mailto:clinicapaulasite@gmail.com"
+            class="font-semibold text-sky-600"
+          >
+            clinicapaulasite@gmail.com
+          </a>.
+        </p>
+
+
+        <h3>
+          2. Dados recolhidos
+        </h3>
+
+
+        <p>
+          Quando utiliza o formulário, são recolhidos apenas os dados que decidir fornecer: nome, endereço de email e conteúdo da mensagem.
+        </p>
+
+
+        <p class="mt-3">
+          Evite incluir informação clínica detalhada, diagnósticos, medicação ou outros dados de saúde na mensagem inicial.
+        </p>
+
+
+        <h3>
+          3. Finalidade
+        </h3>
+
+
+        <p>
+          Os dados são utilizados exclusivamente para receber, analisar e responder ao seu pedido de contacto e, quando solicitado, para tratar de assuntos relacionados com marcação ou esclarecimento do contacto.
+        </p>
+
+
+        <h3>
+          4. Base de licitude
+        </h3>
+
+
+        <p>
+          O tratamento necessário para responder a um pedido de contacto pode assentar, consoante a situação, em diligências pré-contratuais a pedido do titular dos dados ou noutro fundamento de licitude previsto no RGPD que seja aplicável. Os dados do formulário não são utilizados para campanhas de marketing.
+        </p>
+
+
+        <h3>
+          5. Prestador técnico do formulário
+        </h3>
+
+
+        <p>
+          O formulário é entregue à clínica através do serviço <strong>FormSubmit</strong>, utilizado como intermediário técnico para a entrega da mensagem. Este serviço poderá tratar tecnicamente os dados necessários à entrega do formulário.
+        </p>
+
+
+        <h3>
+          6. Conservação
+        </h3>
+
+
+        <p>
+          Os dados serão conservados apenas durante o período necessário para responder ao pedido e, quando exista uma relação profissional ou obrigação legal aplicável, pelos períodos necessários a essas finalidades.
+        </p>
+
+
+        <h3>
+          7. Direitos
+        </h3>
+
+
+        <p>
+          Nos termos aplicáveis do RGPD, pode exercer direitos como acesso, retificação, apagamento, limitação do tratamento, oposição e, quando aplicável, portabilidade.
+        </p>
+
+
+        <p class="mt-3">
+          Para questões ou pedidos relacionados com os seus dados:
+          <a
+            href="mailto:clinicapaulasite@gmail.com"
+            class="font-semibold text-sky-600"
+          >
+            clinicapaulasite@gmail.com
+          </a>.
+        </p>
+
+
+        <h3>
+          8. Reclamações
+        </h3>
+
+
+        <p>
+          Sem prejuízo de outros meios de recurso, pode apresentar uma reclamação junto da Comissão Nacional de Proteção de Dados (CNPD).
+        </p>
+
+
+        <h3>
+          9. Atualizações
+        </h3>
+
+
+        <p>
+          Esta política poderá ser atualizada se o funcionamento do website ou os tratamentos de dados forem alterados.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+  <!-- =====================================================
+       PROTEÇÃO DE DADOS
+  ====================================================== -->
+
+  <div
+    id="modal-dados"
+    class="legal-modal"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="modal-dados-title"
+  >
+
+    <div class="legal-dialog">
+
+      <div
+        class="sticky top-0 z-10 flex items-center justify-between border-b border-slate-200 bg-white/95 px-6 py-5 backdrop-blur sm:px-8"
+      >
+
+        <div>
+
+          <p class="eyebrow">
+            RGPD
+          </p>
+
+
+          <h2
+            id="modal-dados-title"
+            class="mt-1 text-2xl font-bold"
+          >
+            Proteção de Dados
+          </h2>
+
+        </div>
+
+
+        <button
+          type="button"
+          data-modal-close
+          aria-label="Fechar"
+          class="legal-close"
+        >
+          <i
+            data-lucide="x"
+            class="h-5 w-5"
+          ></i>
+        </button>
+
+      </div>
+
+
+      <div
+        class="px-6 py-7 sm:px-8 sm:py-9"
+      >
+
+        <p>
+          A proteção da privacidade é uma preocupação essencial. Este website recolhe dados pessoais através do formulário apenas quando o próprio utilizador decide enviar uma mensagem.
+        </p>
+
+
+        <h3>
+          O que é recolhido?
+        </h3>
+
+
+        <ul>
+          <li>Nome</li>
+          <li>Email</li>
+          <li>Mensagem</li>
+        </ul>
+
+
+        <h3>
+          Para que serve?
+        </h3>
+
+
+        <p>
+          Para que a clínica possa receber e responder ao pedido de contacto. Não existe utilização dos dados do formulário para publicidade ou campanhas de marketing.
+        </p>
+
+
+        <h3>
+          Dados de saúde
+        </h3>
+
+
+        <p>
+          O formulário inicial não deve ser utilizado para enviar relatos clínicos detalhados ou outros dados de saúde. Se for necessária informação adicional, a clínica poderá indicar um meio adequado para o efeito.
+        </p>
+
+
+        <h3>
+          Os seus direitos
+        </h3>
+
+
+        <p>
+          Pode solicitar informações sobre os dados tratados e exercer os direitos previstos no RGPD através do email
+          <a
+            href="mailto:clinicapaulasite@gmail.com"
+            class="font-semibold text-sky-600"
+          >
+            clinicapaulasite@gmail.com
+          </a>.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+  <!-- =====================================================
+       COOKIES
+  ====================================================== -->
+
+  <div
+    id="modal-cookies"
+    class="legal-modal"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="modal-cookies-title"
+  >
+
+    <div class="legal-dialog">
+
+      <div
+        class="sticky top-0 z-10 flex items-center justify-between border-b border-slate-200 bg-white/95 px-6 py-5 backdrop-blur sm:px-8"
+      >
+
+        <div>
+
+          <p class="eyebrow">
+            Privacidade online
+          </p>
+
+
+          <h2
+            id="modal-cookies-title"
+            class="mt-1 text-2xl font-bold"
+          >
+            Política de Cookies
+          </h2>
+
+        </div>
+
+
+        <button
+          type="button"
+          data-modal-close
+          aria-label="Fechar"
+          class="legal-close"
+        >
+          <i
+            data-lucide="x"
+            class="h-5 w-5"
+          ></i>
+        </button>
+
+      </div>
+
+
+      <div
+        class="px-6 py-7 sm:px-8 sm:py-9"
+      >
+
+        <div
+          class="legal-note rounded-xl p-5"
+        >
+
+          <p>
+            Na configuração atual, este website não utiliza cookies de publicidade, perfilização ou analítica como o Google Analytics/Firebase Analytics.
+          </p>
+
+        </div>
+
+
+        <h3>
+          1. O que são cookies?
+        </h3>
+
+
+        <p>
+          Cookies são pequenos identificadores armazenados ou acedidos no equipamento do utilizador. Alguns podem ser necessários ao funcionamento técnico de um website; outros podem servir para analítica, publicidade ou personalização.
+        </p>
+
+
+        <h3>
+          2. Este website
+        </h3>
+
+
+        <p>
+          Na versão atual, não é instalado Google Analytics/Firebase Analytics e não são utilizados cookies de publicidade ou rastreamento para criar perfis de navegação.
+        </p>
+
+
+        <h3>
+          3. Serviços externos
+        </h3>
+
+
+        <p>
+          O website utiliza recursos técnicos externos, como a biblioteca de ícones e o framework de interface. O Google Maps só é aberto quando o utilizador escolhe explicitamente abrir a localização.
+        </p>
+
+
+        <h3>
+          4. Alterações futuras
+        </h3>
+
+
+        <p>
+          Se forem adicionados serviços que utilizem cookies não estritamente necessários, como ferramentas de analítica, publicidade ou mapas incorporados, esta política e o mecanismo de consentimento deverão ser atualizados antes da sua ativação.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+  <!-- =====================================================
+       SCRIPTS
+  ====================================================== -->
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <script>
+
+    lucide.createIcons();
+
+
+    /* =====================================================
+       MENU MOBILE
+    ===================================================== */
+
+    const menuButton =
+      document.getElementById(
+        "mobile-menu-button"
+      );
+
+
+    const mobileMenu =
+      document.getElementById(
+        "mobile-menu"
+      );
+
+
+    if (
+      menuButton &&
+      mobileMenu
+    ) {
+
+      menuButton.addEventListener(
+        "click",
+        () => {
+
+          const open =
+            menuButton.getAttribute(
+              "aria-expanded"
+            ) === "true";
+
+
+          menuButton.setAttribute(
+            "aria-expanded",
+            String(!open)
+          );
+
+
+          mobileMenu.classList.toggle(
+            "hidden"
+          );
+
+        }
+      );
+
+
+      mobileMenu
+        .querySelectorAll("a")
+        .forEach(
+          link => {
+
+            link.addEventListener(
+              "click",
+              () => {
+
+                mobileMenu.classList.add(
+                  "hidden"
+                );
+
+
+                menuButton.setAttribute(
+                  "aria-expanded",
+                  "false"
+                );
+
+              }
+            );
+
+          }
+        );
+
+    }
+
+
+
+    /* =====================================================
+       MODAIS
+    ===================================================== */
+
+    const modalOpeners =
+      document.querySelectorAll(
+        "[data-modal-open]"
+      );
+
+
+    const modalClosers =
+      document.querySelectorAll(
+        "[data-modal-close]"
+      );
+
+
+    function openModal(id) {
+
+      const modal =
+        document.getElementById(id);
+
+
+      if (!modal) {
+        return;
+      }
+
+
+      modal.classList.add(
+        "is-open"
+      );
+
+
+      document.body.style.overflow =
+        "hidden";
+
+
+      const closeButton =
+        modal.querySelector(
+          "[data-modal-close]"
+        );
+
+
+      if (closeButton) {
+        closeButton.focus();
+      }
+
+    }
+
+
+    function closeModal(modal) {
+
+      if (!modal) {
+        return;
+      }
+
+
+      modal.classList.remove(
+        "is-open"
+      );
+
+
+      document.body.style.overflow =
+        "";
+
+    }
+
+
+    modalOpeners.forEach(
+      button => {
+
+        button.addEventListener(
+          "click",
+          () => {
+
+            openModal(
+              button.dataset.modalOpen
+            );
+
+          }
+        );
+
+      }
+    );
+
+
+    modalClosers.forEach(
+      button => {
+
+        button.addEventListener(
+          "click",
+          () => {
+
+            closeModal(
+              button.closest(
+                ".legal-modal"
+              )
+            );
+
+          }
+        );
+
+      }
+    );
+
+
+    document
+      .querySelectorAll(
+        ".legal-modal"
+      )
+      .forEach(
+        modal => {
+
+          modal.addEventListener(
+            "click",
+            event => {
+
+              if (
+                event.target === modal
+              ) {
+
+                closeModal(modal);
+
+              }
+
+            }
+          );
+
+        }
+      );
+
+
+    document.addEventListener(
+      "keydown",
+      event => {
+
+        if (
+          event.key !== "Escape"
+        ) {
+          return;
+        }
+
+
+        const modal =
+          document.querySelector(
+            ".legal-modal.is-open"
+          );
+
+
+        if (modal) {
+          closeModal(modal);
+        }
+
+      }
+    );
+
+  </script>
+
+</body>
+
+</html>
